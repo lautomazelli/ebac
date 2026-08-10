@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fffefb;
+}
+.menuinicial ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px -2px rgba(81, 123, 26, 0.7);
+}
+.menuinicial li{
+    padding: 25px;
+    margin-right: 35px;
+    border-left: 1px solid #517B1A;
+}
+.menuinicial .linkResul{
+    border-right: 1px solid #517B1A;
+}
+.menuinicial a{
+    text-decoration: none;
+    color: #253312;
+}
+.menuinicial a:hover{
+    border-bottom: 1px solid #517B1A;
+    color: #517B1A;
+}
+.menuinicial{
+    color: #253312;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 25px;
+}
+header h1{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #253312;
+}
+header p{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #517B1A;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #253312;
+    padding-top: 10px;
+    border-top: 1px dotted #253312;
+}
+
+label{
+    display: block;
+    padding: 8px;
+    font-size: 18px;
+    color: #253312;
+    font-weight: 700;
+}
+.formulario{
+    text-align: center;
+    margin: 50px;
+    border-top: 1px solid black;
+    padding: 25px;
+    border-bottom: 1px solid black;
+}
+input{
+    padding: 10px 35px;
+    border-color: 1px solid #517B1A;
+    border-radius: 35px;
+    color: #517B1A;
+    text-align: center;
+}
+input:hover{
+    box-shadow: 0 4px 6px -2px rgba(81, 123, 26, 1);
+    text-align: center;
+}
+.botao{
+    display: block;
+    margin: 15px auto;
+    padding: 12px;
+    background-color: #CDD880;
+    border: 1px solid #517B1A;
+    color: #253312;
+    border-radius: 35px;
+}
+.botao:hover{
+    background-color: #253312;
+    border: 1px solid #517B1A;
+    color: #CDD880;
+}
+#resultado, #classificacao, #linkResultado{
+    display: none;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #517B1A;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px dotted #253312; 
+    border-radius: 35px;  
+}
+#linkResultado:hover{
+    background-color: #253312;
+    color: #CDD880;
+}
+
+.menufooter ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 8px;
+
+}
+.menufooter li{
+    padding: 8px;
+    margin-right: 10px;
+    border-left: 1px solid #517B1A;
+}
+.menufooter .linkResul{
+    border-right: 1px solid #517B1A;
+}
+.menufooter a{
+    text-decoration: none;
+    color: #253312;
+}
+.menufooter a:hover{
+    border-bottom: 1px solid #517B1A;
+    color: #517B1A;
+}
+.menufooter{
+    color: #253312;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 -4px 6px -2px rgba(81, 123, 26, 0.7);
+}
+.footer{
+    box-shadow: 0 4px 6px -2px rgba(81, 123, 26, 0.7);
+}
+footer p{
+    text-align: center;
+    font-size: 15px;
+    color: #253312;
+    margin: 15px;
+}
+
+/*O QUE É IMC*/
+main h1, h2, h3, h4{
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #253312;
+    text-align: right;
+    background-color: #CDD880;
+    padding: 12px;
+    margin-right: 40%;
+    margin-top: 15px;
+    border-radius: 0px 35px 35px 0px;
+}
+main p{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #517B1A;
+    text-align: center;
+}
+main a{
+    text-decoration: none;
+    color: #517B1A;
+}
+main a:hover{
+    border-bottom: 1px solid #253312;
+    color: #253312;
+    background-color: #CDD880;
+}
+main{
+    margin-bottom: 20px;
+}
+.imgCalculo{
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+/*RESULTADOS*/
+
+main ul{
+    margin: 40px;
+    font-size: 18px;
+    color: #517B1A;
+}
+main li{
+    padding: 5px;
+}
+.listapeso ul li:nth-child(odd) {
+    background-color: white;
+    margin-right: 35%;
+}
+
+.listapeso li:nth-child(even) {
+    background-color: #CDD880;
+    margin-right: 35%;
+}
+h5{
+    font-size: 18px;
+    color: #517B1A;
+    text-align: center;
+    border: 1px solid #517B1A;
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 35px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card1, .card2, .card3, .card4{
+    width: 45%;
+}
+.card1 li, .card2 li, .card3 li, .card4 li{
+    font-size: 17px;
+    color: #253312;
+    list-style: none;
+}
+b{
+    background-color: #253312;
+    color: #CDD880;
+}

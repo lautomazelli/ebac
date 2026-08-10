@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funções.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <header>
+        <nav class="menuinicial">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="IMC.html">O que é IMC?</a></li>
+                <li class="linkResul"><a href="resultados.html">Resultados</a></li>
+            </ul>
+        </nav>
+        <h1>Vamos calcular o seu IMC?</h1>
+        <p>Basta inserir os dados nos espaços abaixo! Digite seu peso em quilos (kg) e a altura em metros (m). Separe com um ponto (.):</p>
+    </header>
+    
+    <form>
+        <div class="formulario">
+            <label for="peso">Peso em kg (ex: 79.8):</label>
+            <input type="number" id="peso" name="peso" step="0.1" placeholder="Digite utilizando ponto.">
+            <label for="altura">Altura em metros (ex: 1.59):</label>
+            <input type="number" id="altura" name="altura" step="0.1" placeholder="Digite usando ponto.">
+            <button class="botao" type="button" onclick="calcularImc()">Calcular!</button>
+        </div>
+    </form>
+    <p id="resultado">Seu IMC é:</p>
+    <p id="classificacao">Sua classificação é:</p>
+    <a id="linkResultado" href="resultados.html">Entenda esse Resultado</a>
+
+</body>
+<footer>
+    <div class="footer">
+        <nav class="menufooter">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="IMC.html">O que é IMC?</a></li>
+                    <li class="linkResul"><a href="resultados.html">Resultados</a></li>
+                </ul>
+        </nav>
+    </div>
+    <p>&copy; Laura Tomazelli 2026. Todos os direitos reservados.</p>
+</footer>
+</html>
