@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Jogo da adivinhação</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho_text">ADIVINHE O <BR>NÚMERO</BR></h1>
+    </header>
+
+    <main class="conteudo_principal">
+
+        <div class="container_conteudo_principal">
+
+            <div class="container_card_principal">
+
+                <section class="card_principal">
+                    <div class="container_status">
+
+                        <div class="container_status_vida">
+                            <aside class="status_vida">
+                                <p class="vida_text">TENTATIVAS</p>
+
+                                <div class="vida_img">
+                                    <img class="vida" id="coracao1" src="imagens/coracao.png" alt="">
+                                    <img class="vida" id="coracao2" src="imagens/coracao.png" alt="">
+                                    <img class="vida" id="coracao3" src="imagens/coracao.png" alt="">
+                                    <img class="vida" id="coracao4" src="imagens/coracao.png" alt="">
+                                    <img class="vida" id="coracao5" src="imagens/coracao.png" alt="">
+                                </div>
+                            </aside>
+
+                            <div class="container_palpite">
+                                <aside class="palpite_usuario">
+                                    <label for="palpite_input" class="palpite_label">SEU PALPITE É:</label>
+                                    <input type="number" id="palpite_input" class="palpite_caixa">
+                                </aside>
+                                <div class="palpite_subcontainer_botao">
+                                    <button id="botaoPalpite" class="palpite_botao" onclick="verificarPalpite()">ENVIAR</button>
+                                </div>
+                            </div>
+
+                            <div class="container_dicas">
+                                <div class="subcontainer_dicas">
+                                    <img class="dicas_img" src="imagens/fogo.png" alt="">
+                                    <div class="dicas_text_box">
+                                        <p class="dicas_titulo">DICA PRA ACERTAR:</p>
+                                        <p class="dicas_text" id="dica">O número secreto é <span class="dicas_text" id="maiorMenor">???</span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="container_historico">
+                                <section class="historico_text">
+                                    <h2 class="historico_titulo">HISTÓRICO DE TENTATIVAS</h2>
+                                    <ul id="historico">
+                                    </ul>
+                                </section>
+                            </div>
+
+                            <div class="container_desistir">
+                                <p class="desistir_titulo">DIFÍCIL?</p>
+                                <button class="desistir_botao"><a class="desistir_link" href="index.html">DESISTIR</a></button>
+                            </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+           
+        </div>
+
+    </main>
+
+    <div class="container_novojogo">
+        <p class="novojogo_titulo">COMEÇAR DE NOVO?</p>
+        <button class="novojogo_botao"><a class="novojogo_link" href="gamepage.html">NOVO JOGO</a></button>
+    </div>
+
+
+    <footer>
+        <p class="footer_text">&copy; Laura Tomazelli 2026. Todos os direitos reservados. <br>Desenvolvido com &#x1F497 </p>
+        <div class="container_footer">
+            <p class="footer_text_git">Me encontre no Github e no Instagram:</p>
+            <div class="container_footer_link">
+                <a class="footer_link" href="https://github.com/lautomazelli" target="_blank">Github</a>
+                <a class="footer_link" href="https://www.instagram.com/laura.tomazelli/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
