@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/carteira.png" type="image/x-icon">
+    <title>Caixa eletrônico</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho_titulo">Caixa Eletrônico 24h</h1>
+        <p class="cabecalho_slogan">Segurança e praticidade 24h por dia, 7 dias na semana!</p>
+    </header>
+    <main class="container_conteudo">
+
+        <div class="conteudo">
+
+            <section class="container_saldo">
+                <div class="subcontainer_saldo">
+                    <div class="principal_saldo">
+                        <div class="saldo_cabecalho">
+                            <img src="imagens/carteira.png" alt="" class="saldo_img">
+                            <h2 class="saldo_titulo">Saldo em conta</h2>
+                        </div>
+                        <h1 class="saldo_total" id="saldo_conta">R$0,00</h1>
+                    </div>
+                </div>
+            </section>
+
+            <div class="bloco_deposito">
+                <section class="container_deposito">
+                    <div class="deposito_label">
+                        <label for="deposito" class="deposito_titulo">Valor do depósito:</label>
+                        <input type="number" id="deposito" class="deposito_saldo" placeholder="R$0,00">
+                    </div>
+                </section>
+                <button class="deposito_botao" onclick="caixaEletronico.depositar()">Depositar</button>
+            </div>
+
+            <div class="bloco_saque">
+                <section class="container_saque">
+                    <div class="saque_label">
+                        <label for="saque" class="saque_titulo">Valor do saque:</label>
+                        <input type="number" id="saque" class="saque_saldo" placeholder="R$0,00">
+                    </div>
+                </section>
+                <button class="saque_botao" onclick="caixaEletronico.sacar()" >Sacar</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+         <p class="footer_text">&copy; Laura Tomazelli 2026. Todos os direitos reservados. <br>Desenvolvido com &#x1F497 </p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

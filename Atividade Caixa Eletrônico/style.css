@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-titulos: #06172E;
+    --cor-destaques:#068E62;
+    --cor-auxiliar: #B53A3E;
+    --cor-fundo:#F5EFE1;
+    --cor-complementar: #E2EAF2;
+    --cor-cards: #FBFBFB;
+    --fonte-principal: "Inter", sans-serif;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    background-image: linear-gradient(to bottom right, #e2eaf2,#f5efe1);
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container_conteudo{
+    flex: 1;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+.cabecalho_titulo, .cabecalho_slogan{
+    padding: 0px;
+    color: var(--cor-titulos);
+    margin: 0px;
+}
+
+.container_saldo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 70%;
+    max-width: 450px;
+}
+.saldo_cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.saldo_total{
+    margin-top: 0;
+    text-align: center;
+}
+
+.bloco_deposito, .bloco_saque{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 70%;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+.container_deposito, .container_saque, .container_saldo{
+    display: flex;
+
+    box-sizing: border-box;
+    background-color: var(--cor-cards);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.137);
+}
+.container_saldo{
+    margin: 20px auto;
+}
+
+.deposito_label, .saque_label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    font-weight: bolder;
+}
+
+.deposito_titulo, .saque_titulo{
+    font-size: 20px;
+}
+
+.deposito_saldo, .saque_saldo{
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.deposito_botao, .saque_botao{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+}
+.deposito_botao{
+    border: 2px solid var(--cor-destaques);
+    color: #068E62;
+    font-size: 20px;
+    background-color: #068e6323;
+}
+.saque_botao{
+    border: 2px solid var(--cor-auxiliar);
+    color: var(--cor-auxiliar);
+    font-size: 20px;
+    background-color: #b53a3e21;
+}
+.deposito_titulo, .deposito_saldo, .saque_titulo, .saque_saldo{
+    padding: 3px;
+    border-radius: 5px;
+}
+input{
+    background-color: var(--cor-complementar);
+}
+.deposito_saldo{
+    background-image:url("imagens/setaDeposito.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 40px;
+}
+.saque_saldo{
+    background-image:url("imagens/setaSaque.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 40px;
+}
+
+footer{
+    text-align: center;
+    color: var(--cor-titulos);
+    padding: 15px;
+    margin-top: 25px;
+    font-family: var(--fonte-principal);
+}
+.footer_text{
+    padding: 5px;
+}
