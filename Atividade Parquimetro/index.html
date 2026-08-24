@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/parkingLOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade Parquímetro</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="imagens/parkingLOGO.png" alt="Logo Parquímetro" class="logo_img">
+            <div class="logo_textos">
+                <p class="logo_titulo">Parquímetro</p>
+                <p class="logo_slogan">Estacionar ficou fácil!</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="corpo_site">
+
+        <aside class="menu_lateral">
+            <nav class="menu_nav">
+                <a href="index.html" class="menu_item"><img src="imagens/inicioMENU.png" alt="" class="menu_icone">Início</a>
+                <a href="#" class="menu_item"><img src="imagens/como_funcionaMENU.png" alt="" class="menu_icone">Como funciona</a>
+                <a href="#" class="menu_item"><img src="imagens/historicoMENU.png" alt="" class="menu_icone">Histórico</a>
+                <a href="#" class="menu_item"><img src="imagens/fale_conoscoMENU.png" alt="" class="menu_icone">Fale conosco</a>
+                <a href="#" class="menu_item"><img src="imagens/minha_contaMENU.png" alt="" class="menu_icone">Minha conta</a>
+            </nav>
+            <div class="menu_cidade"></div>
+        </aside>
+
+        <main class="conteudo">
+
+            <div class="area_operacao">
+
+                <section class="coluna_valores">
+                    <h1 class="pagina_titulo">Adicionar saldo</h1>
+                    <p class="pagina_subtitulo">Escolha um valor ou digite o valor disponível para adicionar.</p>
+
+                    <div class="card_saldo">
+                        <img src="imagens/saldo_carteiraICONE.png" alt="" class="saldo_icone_esquerda">
+                        <div class="saldo_textos">
+                            <p class="saldo_tarja">Saldo disponível</p>
+                            <p class="saldo_valor" id="saldo_total">R$0,00</p>
+                        </div>      
+                    </div>
+
+                    <p class="etapa_titulo">1. Escolha um valor:</p>
+                    <div class="valores_opcoes">
+                        <button class="valor_card" id="valor_botao1">
+                            <img src="imagens/moedasICONE.png" alt="" class="valor_icone"><span>R$1,00</span>
+                            <p class="valor_tempo">30 minutos</p>
+                        </button>
+                        <button class="valor_card" id="valor_botao175">
+                            <img src="imagens/moedasICONE.png" alt="" class="valor_icone"><span>R$1,75</span>
+                            <p class="valor_tempo">60 minutos</p>
+                        </button>
+                        <button class="valor_card" id="valor_botao3">
+                            <img src="imagens/moedasICONE.png" alt="" class="valor_icone"><span>R$3,00</span>
+                            <p class="valor_tempo">120 minutos</p>
+                        </button>
+                    </div>
+
+                    <p class="etapa_titulo">2. Digite o valor disponível para pagamento:</p>
+                    <div class="input_valor">
+                        <span class="input_prefixo">R$</span>
+                        <input type="number" id="valor_desejado" placeholder="Digite o valor desejado.">
+                    </div>
+
+                    <p class="aviso_minimo"><img src="imagens/infoALERTA.png" alt="" class="aviso_minimo_img"> O valor mínimo para adicionar é R$1,00.</p>
+                </section>
+
+                <aside class="resumo">
+                    <h2 class="resumo_titulo">Resumo da operação</h2>
+
+                    <div class="resumo_linha">
+                        <p>Saldo atual</p>
+                        <p id="saldo_atual">R$0,00</p>
+                    </div>
+
+                    <div class="resumo_linha">
+                        <p>Valor a adicionar</p>
+                        <p id="valor_adicionar">R$0,00</p>
+                    </div>
+
+		    <div class="resumo_linha">
+  			<p>Tempo de estacionamento</p>
+    			<p class="resumo_amarelo" id="tempo_estacionamento">-- min</p>
+	            </div>
+                    <div class="resumo_linha resumo_total">
+                        <p>Total</p>
+                        <p class="resumo_verde" id="total_adicionado">R$0,00</p>
+                    </div>
+                    <div class="resumo_linha">
+                        <p>Troco <img src="imagens/como_funcionaATIVO.png" alt=""></p>
+                        <p class="resumo_verde" id="troco">R$0,00</p>
+                    </div>
+
+                    <button class="botao_adicionar" id="adicionar_saldo"><img src="imagens/cartao_creditoICONE.png" alt="">Adicionar Saldo</button>
+                </aside>
+
+                
+            </div>
+
+            <section class="beneficios_card">
+                <div class="beneficio">
+                    <img src="imagens/seguranca.png" alt="" class="beneficio_icone">
+                    <div class="beneficio_textos">
+                        <h3>Prático e seguro</h3>
+                        <p>Adicione saldo em segundos e utilize o parquímetro com total segurança.</p>
+                    </div>
+                </div>
+                <div class="beneficio">
+                    <img src="imagens/agilidade.png" alt="" class="beneficio_icone">
+                    <div class="beneficio_textos">
+                        <h3>Agilidade</h3>
+                        <p>Mais tempo para você, menos filas e mais comodidade.</p>
+                    </div>
+                </div>
+                <div class="beneficio">
+                    <img src="imagens/historico.png" alt="" class="beneficio_icone">
+                    <div class="beneficio_textos">
+                        <h3>Histórico completo</h3>
+                        <p>Acompanhe todas as transações de forma simples e rápida.</p>
+                    </div>
+                </div>
+                <div class="beneficio">
+                    <img src="imagens/sustentabilidade.png" alt="" class="beneficio_icone">
+                    <div class="beneficio_textos">
+                        <h3>Sustentável</h3>
+                        <p>Contribuímos para uma cidade mais inteligente e sustentável.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="rodape">
+        <img src="imagens/parkingFOOTER.png" alt="" class="rodape_logo">
+        <p>&copy; Laura Tomazelli 2026. Todos os direitos reservados.</p>        
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
