@@ -35,8 +35,8 @@ class Parquimetro {
             tempo: tempoAplicado,
             troco: troco
         };
-    }   
-}       
+    }
+}
 
 class ParquimetroUI {
     constructor() {
@@ -47,104 +47,114 @@ class ParquimetroUI {
     }
 
     iniciar() {
-    const cards = document.querySelectorAll(".valor_card");
+        const cards = document.querySelectorAll(".valor_card");
 
-    cards.forEach((card) => {
-        card.addEventListener("click", () => {
-            this.aoClicarCard(card);   
+        cards.forEach((card) => {
+            card.addEventListener("click", () => {
+                this.aoClicarCard(card);
+            });
         });
-    });
 
-    const input = document.getElementById("valor_desejado");
-    input.addEventListener("input", () => {
-        this.aoDigitar();
-    })
+        const input = document.getElementById("valor_desejado");
+        input.addEventListener("input", () => {
+            this.aoDigitar();
+        })
 
-    const botao = document.getElementById("adicionar_saldo");   
-    botao.addEventListener("click", () => {
-        this.aoAdicionarSaldo();
-});
-}
-
-aoClicarCard(card) {
-    const cards = document.querySelectorAll(".valor_card");
-    cards.forEach((c) => c.classList.remove("valor_card_selecionado"));
-
-    
-    card.classList.add("valor_card_selecionado");
-
-    
-    const id = card.id;
-    let valor = 0;
-    if (id === "valor_botao1")   valor = 1.00;
-    if (id === "valor_botao175") valor = 1.75;
-    if (id === "valor_botao3")   valor = 3.00;
-
-    this.valorAtual = valor;
-    
-    const resultado = this.parquimetro.calcular(valor);
-    this.atualizarResumo(resultado, valor);   
-}
-
-aoDigitar(){
-    const cards = document.querySelectorAll(".valor_card");
-    cards.forEach((c) => c.classList.remove("valor_card_selecionado"));
-
-    const input = document.getElementById("valor_desejado");
-    const valorDigitado = parseFloat(input.value);
-    this.valorAtual = valorDigitado;
-
-    const resultado = this.parquimetro.calcular(valorDigitado);
-
-    this.atualizarResumo(resultado, valorDigitado);   
-
-}
-
-formataMoeda(valor) {
-    return "R$" + valor.toFixed(2).replace(".", ",");
-}
-
-atualizarResumo(resultado, valor) {
-
-    const valorSeguro = isNaN(valor) ? 0 : valor;
-
-    document.getElementById("valor_adicionar").textContent = this.formataMoeda(valorSeguro);
-
-    if (resultado.erro) {
-        document.getElementById("tempo_estacionamento").textContent = "-- min";
-        document.getElementById("troco").textContent = this.formataMoeda(0);
-        document.getElementById("total_adicionado").textContent = this.formataMoeda(0);
-    } else {
-        document.getElementById("tempo_estacionamento").textContent = resultado.tempo + " min";
-        document.getElementById("troco").textContent = this.formataMoeda(resultado.troco);
-        document.getElementById("total_adicionado").textContent = this.formataMoeda(resultado.pacote);
+        const botao = document.getElementById("adicionar_saldo");
+        botao.addEventListener("click", () => {
+            this.aoAdicionarSaldo();
+        });
     }
 
-}
+    aoClicarCard(card) {
+        const cards = document.querySelectorAll(".valor_card");
+        cards.forEach((c) => c.classList.remove("valor_card_selecionado"));
 
-aoAdicionarSaldo() {
-    const resultado = this.parquimetro.calcular(this.valorAtual);
 
-    
-    if (resultado.erro) {
-        alert("Escolha ou digite um valor válido primeiro!");
-        return;
+        card.classList.add("valor_card_selecionado");
+
+
+        const id = card.id;
+        let valor = 0;
+        if (id === "valor_botao1") valor = 1.00;
+        if (id === "valor_botao175") valor = 1.75;
+        if (id === "valor_botao3") valor = 3.00;
+
+        this.valorAtual = valor;
+
+        const resultado = this.parquimetro.calcular(valor);
+        this.atualizarResumo(resultado, valor);
     }
 
-    
-    this.saldo += resultado.pacote;
-    document.getElementById("saldo_total").textContent = this.formataMoeda(this.saldo);
-    document.getElementById("saldo_atual").textContent = this.formataMoeda(this.saldo);
+    aoDigitar() {
+        const cards = document.querySelectorAll(".valor_card");
+        cards.forEach((c) => c.classList.remove("valor_card_selecionado"));
 
-    
-    document.getElementById("valor_desejado").value = "";
-    const cards = document.querySelectorAll(".valor_card");
-    cards.forEach((c) => c.classList.remove("valor_card_selecionado"));
-    this.valorAtual = 0;   
-    this.atualizarResumo({ erro: "vazio" }, 0);
+        const input = document.getElementById("valor_desejado");
+        const valorDigitado = parseFloat(input.value);
+        this.valorAtual = valorDigitado;
 
-    alert("Pagamento concluído com sucesso! Saldo atualizado.");
-}
+        const resultado = this.parquimetro.calcular(valorDigitado);
+
+        this.atualizarResumo(resultado, valorDigitado);
+
+    }
+
+    formataMoeda(valor) {
+        return "R$" + valor.toFixed(2).replace(".", ",");
+    }
+
+    atualizarResumo(resultado, valor) {
+
+        const valorSeguro = isNaN(valor) ? 0 : valor;
+
+        document.getElementById("valor_adicionar").textContent = this.formataMoeda(valorSeguro);
+
+        if (resultado.erro) {
+            if (resultado.erro === "valor_insuficiente") {
+                document.getElementById("tempo_estacionamento").textContent = "Valor insuficiente!";
+            } else {
+                document.getElementById("tempo_estacionamento").textContent = "-- min";
+            }
+            document.getElementById("troco").textContent = this.formataMoeda(0);
+            document.getElementById("total_adicionado").textContent = this.formataMoeda(0);
+        } else {
+            document.getElementById("tempo_estacionamento").textContent = resultado.tempo + " min";
+            document.getElementById("troco").textContent = this.formataMoeda(resultado.troco);
+            document.getElementById("total_adicionado").textContent = this.formataMoeda(resultado.pacote);
+        }
+
+    }
+
+
+
+    aoAdicionarSaldo() {
+        const resultado = this.parquimetro.calcular(this.valorAtual);
+
+
+        if (resultado.erro) {
+            if (resultado.erro === "valor_insuficiente") {
+                alert("Valor insuficiente! O valor mínimo é R$1,00.");
+            } else {
+                alert("Digite um valor válido!");
+            }
+            return;
+        }
+
+
+        this.saldo += resultado.pacote;
+        document.getElementById("saldo_total").textContent = this.formataMoeda(this.saldo);
+        document.getElementById("saldo_atual").textContent = this.formataMoeda(this.saldo);
+
+
+        document.getElementById("valor_desejado").value = "";
+        const cards = document.querySelectorAll(".valor_card");
+        cards.forEach((c) => c.classList.remove("valor_card_selecionado"));
+        this.valorAtual = 0;
+        this.atualizarResumo({ erro: "vazio" }, 0);
+
+        alert("Pagamento concluído com sucesso! Saldo atualizado.");
+    }
 
 }
 
