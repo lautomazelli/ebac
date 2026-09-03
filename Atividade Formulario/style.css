@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-fundo-claro:#fffdfb;
+    --cor-fontes: #412e1c;
+    --cor-destaques: #AD8758;
+    --cor-bordas: #404040;
+    --fonte-titulos: "Playfair Display", serif;
+    --fonte-corpo: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: 
+    linear-gradient(to right, transparent, #FEF2E3),
+    url(imagens/fundo_clinica.png);
+    background-repeat: no-repeat;
+    background-size: cover;       
+    background-position: center; 
+    min-height: 100vh;  
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+}
+.logo_img{
+    width: 90px;  
+}
+.cabecalho_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+.logo_nome{
+    color: var(--cor-fontes);
+    font-family: var(--fonte-titulos);
+    font-size: 52px;
+    font-weight: 300;
+    text-align: center;
+}
+.logo_slogan{
+    color: var(--cor-fontes);
+    font-family: var(--fonte-corpo);
+    font-size: 18px;
+    text-align: center;
+}
+.cabecalho_cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    margin-top: 10px;
+}
+.cadastro_titulo{
+    font-family: var(--fonte-titulos);
+    font-weight: 300;
+    color: var(--cor-fontes);
+    font-size: 20px;
+}
+.cadastro_infos{
+    font-family: var(--fonte-corpo);
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--cor-fontes);
+}
+
+.container_dados{
+    background-color: var(--cor-fundo-claro);
+    margin: 10px 35px;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.cabecalho_dados{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0px;
+    font-family: var(--fonte-titulos);
+    font-size: 18px;
+    color: var(--cor-fontes);
+    font-weight: 600;
+}
+.dado_titulo{
+    background-color: var(--cor-destaques);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--cor-fundo-claro);
+    font-weight: bold;
+}
+.cabecalho_dados>hr{
+    color: var(--cor-fontes);
+    flex: 1;
+    height: 1px;
+    border: none;
+    background-color: var(--cor-bordas);
+    margin: 0px;
+}
+
+.dados_conjunto, .input_dados{
+    font-family: var(--fonte-corpo);
+    color: var(--cor-fontes);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input_dados{
+    margin: 0;
+    border-radius: 5px;
+    padding: 4px;
+    border: 1px solid var(--cor-bordas);
+    font-size: 14px;
+    color: var(--cor-destaques);
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.label_dados{
+    margin-top: 8px;
+}
+.input_pequeno{
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+}
+
+.section_contato{
+    margin: 10px 0px;
+}
+.contato_formulario{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+.contato_fone, .contato_email{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.contato_formulario, .endereco_formulario{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.endereco_rua, .endereco_referencia{
+    flex: 2;
+    min-width: 300px;
+}
+.endereco_cep, .endereco_number{
+    flex: 0 0 130px;
+}
+
+.botao{
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.botao_cadastrar{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--cor-destaques);
+    background-color: var(--cor-destaques);
+    color: var(--cor-fundo-claro);
+    font-family: var(--fonte-corpo);
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+.botao_cadastrar:active{
+    background-color: var(--cor-fontes);
+}
+
+.rodape{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: var(--fonte-corpo);
+    color: var(--cor-fontes);
+    
+}

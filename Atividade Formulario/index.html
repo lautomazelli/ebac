@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <title>Atividade Formulários</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_logo">
+            <div class="cabecalho_img">
+                <img src="imagens/logo.png" alt="Imagem da Logo." class="logo_img">
+            </div>
+            <div class="cabecalho_nome">
+                <h1 class="logo_nome">RENOVA</h1>
+                <p class="logo_slogan">CLÍNICA ESTÉTICA</p>
+            </div>
+        </div>
+
+        <div class="cabecalho_cadastro">
+            <h2 class="cadastro_titulo">Cadastro de Paciente</h2>
+            <p class="cadastro_infos">Preencha com as informações do paciente para realizar o cadastro.</p>
+        </div>
+    </header>
+
+    <main class="conteudo_principal">
+
+        <div class="container_dados">
+
+            <section class="section_pessoais">
+                <div class="pessoais_cabecalho cabecalho_dados">
+                    <p class="dados_1 dado_titulo">1</p>
+                    <p class="pessoais_titulo">Dados Pessoais</p>
+                    <hr>
+                </div>
+                <div class="pessoais_formulario">
+                    <div class="pessoais_nome dados_conjunto">
+                        <label for="nome" class="formulario_nome label_dados">Nome Completo</label>
+                        <input type="text" name="nome" id="nome" class="input_dados input_completo input_nome"
+                            placeholder="Digite o nome completo.">
+                    </div>
+                    <div class="pessoais_nascimento dados_conjunto">
+                        <label for="nascimento" class="label_dados formulario_nascimento">Data de Nascimento</label>
+                        <input type="date" name="nascimento" id="nascimento"
+                            class="input_dados input_pequeno input_data">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section_contato">
+
+                <div class="contato_cabecalho cabecalho_dados">
+                    <p class="dados_2 dado_titulo">2</p>
+                    <p class="contato_titulo">Contato</p>
+                    <hr>
+                </div>
+                <div class="contato_formulario">
+                    <div class="contato_fone dados_conjunto">
+                        <label for="fone" class="formulario_fone label_dados">Número de Telefone</label>
+                        <input type="tel" name="fone" id="fone" class="input_dados input_medio input_fone"
+                            placeholder="(00)00000-0000" inputmode="numeric" pattern="[(0-9)]{2}[0-9]{5}-[0-9]{4}"
+                            maxlength="15">
+                    </div>
+                    <div class="contato_email dados_conjunto">
+                        <label for="email" class="formulario_email label_dados ">E-mail</label>
+                        <input type="email" name="email" id="email" class="input_dados input_medio input_email"
+                            placeholder="exemplo@email.com">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section_endereco">
+
+                <div class="endereco_cabecalho cabecalho_dados">
+                    <p class="dados_3 dado_titulo">3</p>
+                    <p class="endereco_titulo">Endereço</p>
+                    <hr>
+                </div>
+                <div class="endereco_formulario ">
+                    <div class="endereco_cep dados_conjunto">
+                        <label for="cep" class="formulario_cep label_dados">CEP</label>
+                        <input type="text" inputmode="numeric" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000"
+                            maxlength="9" required name="cep" id="cep" class="input_dados input_pequeno input_cep">
+                    </div>
+                    <div class="endereco_rua dados_conjunto">
+                        <label for="rua" class="formulario_rua label_dados">Rua</label>
+                        <input type="text" name="rua" id="rua" class="input_dados input_grande input_rua">
+                    </div>
+                    <div class="endereco_number dados_conjunto">
+                        <label for="numero" class="formulario_number label_dados">Número</label>
+                        <input type="text" inputmode="numeric" name="numero" id="numero"
+                            class="input_dados input_pequeno input_numero">
+                    </div>
+                    <div class="endereco_bairro dados_conjunto">
+                        <label for="bairro" class="formulario_bairro label_dados">Bairro</label>
+                        <input type="text" name="bairro" id="bairro" class="input_dados input_medio input_bairro">
+                    </div>
+                    <div class="endereco_referencia dados_conjunto">
+                        <label for="referencia" class="formulario_referencia label_dados">Referência</label>
+                        <input type="text" name="referencia" id="referencia"
+                            class="input_dados input_grande input_referencia">
+                    </div>
+                    <div class="endereco_cidade dados_conjunto">
+                        <label for="cidade" class="formulario_cidade label_dados">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" class="input_dados input_medio input_cidade">
+                    </div>
+                    <div class="endereco_estado dados_conjunto">
+                        <label for="estado" class="formulario_estado label_dados">Estado</label>
+                        <input type="text" name="estado" id="estado" class="input_dados input_medio input_estado">
+                    </div>
+                </div>
+
+            </section>
+            <div class="botao">
+                <button id="botao_cadastro" class="botao_cadastrar">Cadastrar Paciente</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape_seguranca">Dados protegidos.</p>
+        <hr>
+        <p class="rodape_desenvolvido">Desenvolvido por Laura Tomazelli.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
