@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Áurea Tarot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/logo-casaaurea.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <section class="cabecalho_site">
+            <div class="logo_cabecalho">
+                <div class="logo_img">
+                    <img src="imagens/logo-casaaurea.png" alt="Logo da Casa Áurea" class="img_logo">
+                </div>
+                <div class="logo-nome">
+                    <span class="logo_titulo">
+                        <p>Casa Áurea</p>
+                    </span>
+                    <span class="logo_slogan">
+                        <p>TAROT & ESOTERISMO</p>
+                    </span>
+                </div>
+            </div>
+            <div class="menu_cabecalho">
+                <nav class="menu">
+                    <ul class="lista_menu">
+                        <li class="item_menu item_home"><a href="home.html">HOME</a></li>
+                        <li class="item_menu item_contato"><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main class="conteudo_site">
+        <section class="conteudo_principal">
+            <section class="conteudo_texto">
+
+                <div class="conteudo_img">
+                    <img src="imagens/logo-casaaurea.png" alt="Logo Casa Áurea" class="img_principal">
+                </div>
+
+                <div class="conteudo_texto_enunciado">
+                    <span class="conteudo_enunciado">
+                        <p class="texto_enunciado">A espera quase acabou.</p>
+                    </span>
+                    <span class="conteudo_titulo">
+                        <h1 class="titulo_enunciado">Faça o pré-save do nosso novo <em>Tarot!</em></h1>
+                    </span>
+                    <span class="conteudo_aviso">
+                        <p class="aviso_enunciado">Cadastre o nome e e-mail dos usuários que desejam ser avisados sobre
+                            o pré-save.</p>
+                    </span>
+                </div>
+            </section>
+
+            <section class="conteudo_inputs">
+                <div class="inputs">
+                    <input type="text" name="nome" id="nome" class="input_nome input_dados" placeholder="Nome" required autofocus autocomplete="off">
+                    <input type="email" name="email" id="email" class="input_email input_dados" placeholder="E-mail" required autocomplete="off">
+                </div>
+                <div class="inputs_botao">
+                    <button id="botao_cadastro" class="btn_cadastro">CADASTRAR CLIENTE</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="conteudo_clientes">
+            <div class="box_clientes">
+                <div class="box_cabecalho">
+                    <h2 class="box_titulo">Clientes</h2>
+                    <p class="box_texto">Lista de clientes na fila de espera do pré-save.</p>
+                </div>
+
+                <table class="tabela_clientes">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista_clientes"></tbody>
+                </table>
+
+                <div class="paginacao_box">
+                    <p class="paginacao_texto">
+                        Mostrando
+                        <span id="inicio">1</span> -
+                        <span id="fim">6</span> de
+                        <span id="total">0</span>
+                    </p>
+
+                    <div class="paginacao_botoes">
+                        <button class="btn_pagina" onclick="mudarPagina(-1)">&lt;</button>
+                        <span class="pagina_atual" id="pagina_atual">1</span>
+                        <button class="btn_pagina" onclick="mudarPagina(1)">&gt;</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>Desenvolvido por Laura Tomazelli para o curso Front-end da EBAC.</p>
+        <p>Baseado em minha própria marca.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
