@@ -1,5 +1,5 @@
 import { ControleFinanceiro } from './classes.js';
-import { obterElemento, formatarMoeda, validarValor, limparCampo } from './utils.js';
+import { obterElemento, formatarMoeda, validarValor, limparCampo, exibirErro } from './utils.js';
 
 const app = {
     controle: null,
@@ -12,7 +12,6 @@ const app = {
 
     configurarEventos() {
         const btnAdicionar = obterElemento('btn-adicionar');
-        
         if (btnAdicionar) {
             btnAdicionar.addEventListener('click', () => this.processarGasto());
         }
@@ -25,36 +24,45 @@ const app = {
         const valor = parseFloat(inputValor.value);
         const categoria = selectCategoria.value;
 
+        
+        exibirErro('valor', '');
+        exibirErro('categoria', '');
+
+        
         if (!validarValor(valor)) {
-            alert('Por favor, insira um valor válido maior que zero.');
+            exibirErro('valor', 'Insira um valor válido maior que zero.');
+            inputValor.focus();
             return;
         }
 
         if (!categoria) {
-            alert('Por favor, selecione uma categoria.');
+            exibirErro('categoria', 'Selecione uma categoria.');
+            selectCategoria.focus();
             return;
         }
 
+        
         this.controle.adicionarGasto(categoria, valor);
         this.atualizarInterface();
+        
         limparCampo('valor');
-        selectCategoria.value = '';
+        selectCategoria.value = ''; 
     },
 
     atualizarInterface() {
-    this.controle.categorias.forEach(cat => {
-        const elemento = obterElemento(cat.nome);
-        if (elemento) {
-            elemento.textContent = formatarMoeda(cat.valor);
-        }
-    });
+        this.controle.categorias.forEach(cat => {
+            const elemento = obterElemento(cat.nome);
+            if (elemento) {
+                elemento.textContent = formatarMoeda(cat.valor);
+            }
+        });
 
-    const elementoTotal = obterElemento('total');
-    if (elementoTotal) {
-        const total = this.controle.calcularTotal();
-        elementoTotal.textContent = formatarMoeda(total);
+        const elementoTotal = obterElemento('total');
+        if (elementoTotal) {
+            const total = this.controle.calcularTotal();
+            elementoTotal.textContent = formatarMoeda(total);
+        }
     }
-}
 };
 
 document.addEventListener('DOMContentLoaded', () => app.init());

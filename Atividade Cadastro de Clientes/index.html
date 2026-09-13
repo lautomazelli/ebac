@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Áurea Tarot</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="imagens/logo-casaaurea.png" type="image/x-icon">
 </head>
 
@@ -28,7 +28,7 @@
             <div class="menu_cabecalho">
                 <nav class="menu">
                     <ul class="lista_menu">
-                        <li class="item_menu item_home"><a href="home.html">HOME</a></li>
+                        <li class="item_menu item_home"><a href="index.html">HOME</a></li>
                         <li class="item_menu item_contato"><a href="contato.html">CONTATO</a></li>
                     </ul>
                 </nav>
@@ -96,9 +96,9 @@
                     </p>
 
                     <div class="paginacao_botoes">
-                        <button class="btn_pagina" onclick="mudarPagina(-1)">&lt;</button>
+                        <button id="btn-anterior" class="btn_pagina">&lt;</button>
                         <span class="pagina_atual" id="pagina_atual">1</span>
-                        <button class="btn_pagina" onclick="mudarPagina(1)">&gt;</button>
+                        <button id="btn-proximo" class="btn_pagina">&gt;</button>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@
         <p>Desenvolvido por Laura Tomazelli para o curso Front-end da EBAC.</p>
         <p>Baseado em minha própria marca.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/app.js" type="module"></script>
 </body>
 
 </html>
