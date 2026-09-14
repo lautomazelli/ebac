@@ -15,7 +15,7 @@ O objetivo principal deste projeto foi consolidar e aplicar na prática conceito
 
 > *Este projeto foi desenvolvido como parte da formação em Front-end da **EBAC**, com foco rigoroso em boas práticas de UI/UX, performance web e escrita de Clean Code.*
 
-(print1.png)
+
 
 ---
 
@@ -41,6 +41,3 @@ O projeto foi construído utilizando a stack fundamental da Web, explorando seus
 
 ---
 
-(print2.png)
-
-(print3.png)
