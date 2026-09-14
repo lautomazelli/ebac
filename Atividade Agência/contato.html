@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imagens/diamante.png" type="image/x-icon">
+    <title>Contato - Agência Criativa Web</title>
+</head>
+<body>
+    <div class="corpo-site">
+        <header class="cabecalho-site">
+            <div class="cabecalho-logo">
+                <p class="logo-principal">A</p>
+                <div class="logo-texto">
+                    <p class="logo-titulo">AGÊNCIA</p>
+                    <p class="logo-nome">CRIATIVA WEB</p>
+                </div>
+            </div>
+            <div class="cabecalho-menu">
+                <nav class="menu">
+                    <ul class="menu-itens">
+                        <li class="item-lista">
+                            <a href="index.html" class="item-link">Início</a>
+                        </li>
+                        <li class="item-lista">
+                            <a href="index.html#servicos" class="item-link">Serviços</a>
+                        </li>
+                        <li class="item-lista">
+                            <a href="index.html#clientes" class="item-link">Portfólio</a>
+                        </li>
+                        <li class="item-lista">
+                            <a href="index.html#sobre" class="item-link">Sobre</a>
+                        </li>
+                        <li class="item-lista">
+                            <a href="contato.html" class="item-link ativo">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cabecalho-botao">
+                    <a href="#formulario" class="botao-formulario">
+                        Vamos conversar <img src="imagens/seta-branca.png" alt="" class="botao-formulario-img">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="conteudo-principal">
+            <section class="secao-contato">
+                <div class="container-contato">
+                    
+                    
+                    <div class="contato-info">
+                        <p class="contato-chamada">CONTATO</p>
+                        <h1 class="contato-titulo">Vamos conversar?<br>Será um prazer falar com você.</h1>
+                        <p class="contato-descricao">
+                            Se você tem um projeto em mente, precisa de ajuda para impulsionar sua marca ou quer apenas
+                            trocar uma ideia, estamos aqui para ouvir. Preencha o formulário ao lado ou entre em contato
+                            pelos nossos canais.
+                        </p>
+
+                        <div class="contato-redes-sociais">
+                            <p class="redes-chamada">NOS SIGA</p>
+                            <p class="redes-texto">Acompanhe nosso trabalho, novidades e inspirações nas redes sociais.</p>
+                            
+                            <div class="redes-icons">
+                                <div class="rede-item">
+                                    <div class="rede-icon">
+                                        <img src="imagens/github-preto.png" alt="GitHub" class="icon-rede">
+                                    </div>
+                                    <p class="rede-nome">GitHub</p>
+                                    <a href="https://github.com/lautomazelli" class="rede-link" target="_blank">/lautomazelli</a>
+                                </div>
+                                
+                                <div class="rede-item">
+                                    <div class="rede-icon">
+                                        <img src="imagens/linkedin-preto.png" alt="LinkedIn" class="icon-rede">
+                                    </div>
+                                    <p class="rede-nome">LinkedIn</p>
+                                    <a href="https://www.linkedin.com/in/lauratomazellidecastro/" class="rede-link" target="_blank">/lauratomazellidecastro</a>
+                                </div>
+                                
+                                <div class="rede-item">
+                                    <div class="rede-icon">
+                                        <img src="imagens/instagram-preto.png" alt="Instagram" class="icon-rede">
+                                    </div>
+                                    <p class="rede-nome">Instagram</p>
+                                    <a href="https://www.instagram.com/laura.tomazelli/" class="rede-link" target="_blank">@laura.tomazelli</a>
+                                </div>
+                                
+                                <div class="rede-item">
+                                    <div class="rede-icon">
+                                        <img src="imagens/email-preto.png" alt="E-mail" class="icon-rede">
+                                    </div>
+                                    <p class="rede-nome">E-mail</p>
+                                    <a href="mailto:lauratomazellidecastro@gmail.com" class="rede-link" target="_blank">lauratomazellidecastro@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sobre-projeto">
+                            <p class="projeto-chamada">SOBRE ESTE PROJETO</p>
+                            <p class="projeto-texto">
+                                Este projeto foi desenvolvido para o curso de Front-end da EBAC, módulo 11 de Web Design
+                                Responsivo, com o objetivo de criar uma landing page para uma agência de marketing.
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="contato-formulario-card" id="formulario">
+                        <form class="formulario-contato" action="#" method="POST">
+                            <div class="formulario-campo">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                            </div>
+                            
+                            <div class="formulario-campo">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            
+                            <div class="formulario-campo">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                            </div>
+                            
+                            <div class="formulario-campo">
+                                <label for="assunto">Assunto</label>
+                                <select id="assunto" name="assunto" required>
+                                    <option value="" disabled selected>Selecione uma opção</option>
+                                    <option value="criacao-sites">Criação de Sites</option>
+                                    <option value="identidade-visual">Identidade Visual</option>
+                                    <option value="redes-sociais">Redes Sociais</option>
+                                    <option value="marketing-digital">Marketing Digital</option>
+                                    <option value="consultoria-criativa">Consultoria Criativa</option>
+                                    <option value="parcerias">Parcerias</option>
+                                    <option value="ainda-nao-sei">Ainda não sei</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            
+                            <div class="formulario-campo">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" placeholder="Conte pra gente sobre o seu projeto..." rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="formulario-botao-enviar">
+                                Enviar mensagem
+                                <img src="imagens/seta-branca.png" alt="" class="botao-seta">
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-contato">
+            <div class="footer-contato-container">
+                
+            
+                <div class="footer-contato-esquerda">
+                    <div class="footer-contato-logo">
+                        <p class="footer-contato-logo-principal">A</p>
+                        <div class="footer-contato-logo-texto">
+                            <p class="footer-contato-logo-titulo">AGÊNCIA</p>
+                            <p class="footer-contato-logo-nome">CRIATIVA WEB</p>
+                        </div>
+                    </div>
+                    
+                    <p class="footer-contato-descricao">Estratégia, criatividade e tecnologia para marcas que importam.</p>
+                    
+                    <div class="footer-contato-linha"></div>
+                    
+                    <p class="footer-contato-copy">&copy; 2026 Laura Tomazelli de Castro. Todos os direitos reservados.</p>
+                </div>
+
+                
+                <div class="footer-contato-direita">
+                    <nav class="footer-contato-menu">
+                        <ul class="footer-contato-menu-itens">
+                            <li class="footer-contato-menu-item">
+                                <a href="index.html#home" class="footer-contato-link">Início</a>
+                            </li>
+                            <li class="footer-contato-menu-item">
+                                <a href="index.html#servicos" class="footer-contato-link">Serviços</a>
+                            </li>
+                            <li class="footer-contato-menu-item">
+                                <a href="index.html#clientes" class="footer-contato-link">Portfólio</a>
+                            </li>
+                            <li class="footer-contato-menu-item">
+                                <a href="index.html#sobre" class="footer-contato-link">Sobre</a>
+                            </li>
+                            <li class="footer-contato-menu-item">
+                                <a href="contato.html" class="footer-contato-link">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-contato-redes">
+                        <a href="https://github.com/lautomazelli" target="_blank" class="footer-contato-rede-link" aria-label="GitHub" target="_blank">
+                            <img src="imagens/github-branco.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/lauratomazellidecastro/" target="_blank" class="footer-contato-rede-link" aria-label="LinkedIn" target="_blank">
+                            <img src="imagens/linkedin-branco.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.instagram.com/laura.tomazelli/" target="_blank" class="footer-contato-rede-link" aria-label="Instagram" target="_blank">
+                            <img src="imagens/instagram-branco.png" alt="Instagram">
+                        </a>
+                        <a href="mailto:lauratomazellidecastro@gmail.com" class="footer-contato-rede-link" aria-label="E-mail" target="_blank">
+                            <img src="imagens/email-branco.png" alt="E-mail">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
