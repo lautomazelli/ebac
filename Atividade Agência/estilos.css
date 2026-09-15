@@ -210,12 +210,14 @@ body {
     transition: all 0.3s ease;
 }
 
-.hero__botao:hover {
+.hero__botao:hover,
+.contato-form__botao:hover {
     background-color: var(--cor-texto-secundario);
     transform: translateX(5px);
 }
 
-.hero__botao-icone {
+.hero__botao-icone,
+.contato-form__botao-icone {
     width: 18px;
     height: 18px;
     filter: brightness(0) invert(1);
@@ -233,7 +235,7 @@ body {
     animation: bounce 2s infinite;
 }
 
-.hero__scroll-icone img {
+.hero__scroll-imagem {
     width: 30px;
     height: 30px;
     filter: brightness(0) invert(0.3);
@@ -337,7 +339,8 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.servicos__icone {
+.servicos__icone,
+.contato-form__feature-imagem {
     width: 30px;
     height: 30px;
     object-fit: contain;
@@ -476,7 +479,7 @@ body {
     margin: 0;
 }
 
-.clientes .carousel:last-of-type {
+.carousel--depoimentos {
     margin-top: 5rem;
 }
 
@@ -761,11 +764,6 @@ body {
     justify-content: center;
 }
 
-.contato-form__feature-imagem {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
 
 .contato-form__feature-texto {
     font-size: 0.95rem;
@@ -793,15 +791,13 @@ body {
     gap: 0.5rem;
 }
 
-.contato-form__campo label {
+.contato-form__label {
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--cor-texto-principal);
 }
 
-.contato-form__campo input,
-.contato-form__campo select,
-.contato-form__campo textarea {
+.contato-form__controle {
     font-family: var(--fonte-site);
     font-size: 0.95rem;
     padding: 1rem;
@@ -812,14 +808,12 @@ body {
     transition: border-color 0.3s ease;
 }
 
-.contato-form__campo input:focus,
-.contato-form__campo select:focus,
-.contato-form__campo textarea:focus {
+.contato-form__controle:focus {
     outline: none;
     border-color: var(--cor-bege-destaque);
 }
 
-.contato-form__campo textarea {
+.contato-form__controle--textarea {
     resize: vertical;
     min-height: 120px;
 }
@@ -843,16 +837,7 @@ body {
     width: 100%;
 }
 
-.contato-form__botao:hover {
-    background-color: var(--cor-texto-secundario);
-    transform: translateX(5px);
-}
 
-.contato-form__botao-icone {
-    width: 18px;
-    height: 18px;
-    filter: brightness(0) invert(1);
-}
 
 .footer {
     background-color: var(--cor-fundo-principal);
@@ -1040,13 +1025,13 @@ body {
     border-color: var(--cor-fundo-principal);
 }
 
-.footer__rede-link img {
+.footer__rede-icone {
     width: 18px;
     height: 18px;
     object-fit: contain;
 }
 
-.footer__rede-link:hover img {
+.footer__rede-link:hover .footer__rede-icone {
     filter: brightness(0) invert(1);
 }
 
@@ -1171,7 +1156,7 @@ body {
     margin: 0;
 }
 
-.contato-pagina__rede-link span {
+.contato-pagina__rede-usuario {
     font-size: 0.85rem;
     font-weight: 400;
     color: var(--cor-texto-discreto);
@@ -1179,7 +1164,7 @@ body {
     transition: color 0.3s ease;
 }
 
-.contato-pagina__rede-link:hover span {
+.contato-pagina__rede-link:hover .contato-pagina__rede-usuario {
     color: var(--cor-texto-principal);
 }
 
@@ -1224,7 +1209,7 @@ body {
     z-index: 101;
 }
 
-.hamburger-line {
+.hamburger-menu__linha {
     width: 100%;
     height: 3px;
     background-color: var(--cor-texto-principal);
@@ -1233,15 +1218,15 @@ body {
     display: block;
 }
 
-.hamburger-menu.active .hamburger-line:nth-child(1) {
+.hamburger-menu--active .hamburger-menu__linha:nth-child(1) {
     transform: rotate(45deg) translate(7px, 7px);
 }
 
-.hamburger-menu.active .hamburger-line:nth-child(2) {
+.hamburger-menu--active .hamburger-menu__linha:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger-menu.active .hamburger-line:nth-child(3) {
+.hamburger-menu--active .hamburger-menu__linha:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
@@ -1258,7 +1243,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.menu-overlay.active {
+.menu-overlay--active {
     display: block;
     opacity: 1;
 }
@@ -1384,11 +1369,11 @@ body {
         padding: 2rem;
     }
 
-    .menu__itens.active {
+    .menu__itens--active {
         right: 0;
     }
 
-    .menu__itens .menu__link {
+    .menu__link {
         font-size: 1.2rem;
     }
 
@@ -1557,7 +1542,7 @@ body {
         height: 38px;
     }
 
-    .clientes .carousel:last-of-type {
+    .carousel--depoimentos {
         margin-top: 4rem;
     }
 

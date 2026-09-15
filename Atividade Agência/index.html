@@ -68,7 +68,7 @@
                 </div>
                 <div class="hero__scroll">
                     <div class="hero__scroll-icone">
-                        <img src="imagens/seta-abaixo.png" alt="Seta indicando para rolar a página">
+                        <img src="imagens/seta-abaixo.png" alt="Seta indicando para rolar a página" class="hero__scroll-imagem">
                     </div>
                     <div class="hero__scroll-texto">
                         <p class="hero__scroll-label">Role para descobrir</p>
@@ -223,7 +223,7 @@
                     </button>
                 </div>
 
-                <div class="carousel">
+                <div class="carousel carousel--depoimentos">
                     <button class="carousel__botao carousel__botao--prev" aria-label="Depoimento anterior">
                         <img src="imagens/seta-preta-esquerda.png" alt="Anterior" class="carousel__seta">
                     </button>
@@ -356,20 +356,20 @@
                     <div class="contato-form__card">
                         <form class="contato-form__form" action="#" method="POST">
                             <div class="contato-form__campo">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                                <label class="contato-form__label" for="nome">Nome</label>
+                                <input class="contato-form__controle" type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
                             </div>
                             <div class="contato-form__campo">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                                <label class="contato-form__label" for="email">E-mail</label>
+                                <input class="contato-form__controle" type="email" id="email" name="email" placeholder="seu@email.com" required>
                             </div>
                             <div class="contato-form__campo">
-                                <label for="telefone">Telefone</label>
-                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                                <label class="contato-form__label" for="telefone">Telefone</label>
+                                <input class="contato-form__controle" type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
                             </div>
                             <div class="contato-form__campo">
-                                <label for="assunto">Assunto</label>
-                                <select id="assunto" name="assunto" required>
+                                <label class="contato-form__label" for="assunto">Assunto</label>
+                                <select class="contato-form__controle" id="assunto" name="assunto" required>
                                     <option value="" disabled selected>Selecione uma opção</option>
                                     <option value="criacao-sites">Criação de Sites</option>
                                     <option value="identidade-visual">Identidade Visual</option>
@@ -382,8 +382,8 @@
                                 </select>
                             </div>
                             <div class="contato-form__campo">
-                                <label for="mensagem">Mensagem</label>
-                                <textarea id="mensagem" name="mensagem" placeholder="Conte pra gente sobre o seu projeto..." rows="5" required></textarea>
+                                <label class="contato-form__label" for="mensagem">Mensagem</label>
+                                <textarea class="contato-form__controle contato-form__controle--textarea" id="mensagem" name="mensagem" placeholder="Conte pra gente sobre o seu projeto..." rows="5" required></textarea>
                             </div>
                             <button type="submit" class="contato-form__botao">
                                 Enviar mensagem
@@ -431,16 +431,16 @@
                     </nav>
                     <div class="footer__redes">
                         <a href="https://github.com/lautomazelli" target="_blank" class="footer__rede-link" aria-label="GitHub">
-                            <img src="imagens/github-branco.png" alt="GitHub">
+                            <img src="imagens/github-preto.png" alt="GitHub" class="footer__rede-icone">
                         </a>
                         <a href="https://www.linkedin.com/in/lauratomazellidecastro/" target="_blank" class="footer__rede-link" aria-label="LinkedIn">
-                            <img src="imagens/linkedin-branco.png" alt="LinkedIn">
+                            <img src="imagens/linkedin-preto.png" alt="LinkedIn" class="footer__rede-icone">
                         </a>
                         <a href="https://www.instagram.com/laura.tomazelli/" target="_blank" class="footer__rede-link" aria-label="Instagram">
-                            <img src="imagens/instagram-branco.png" alt="Instagram">
+                            <img src="imagens/instagram-preto.png" alt="Instagram" class="footer__rede-icone">
                         </a>
                         <a href="mailto:lauratomazellidecastro@gmail.com" class="footer__rede-link" aria-label="E-mail">
-                            <img src="imagens/email-branco.png" alt="E-mail">
+                            <img src="imagens/email-preto.png" alt="E-mail" class="footer__rede-icone">
                         </a>
                     </div>
                 </div>

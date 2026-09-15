@@ -97,9 +97,9 @@ class MobileMenu {
         this.hamburgerBtn.className = 'hamburger-menu';
         this.hamburgerBtn.setAttribute('aria-label', 'Abrir menu');
         this.hamburgerBtn.innerHTML = `
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
+            <span class="hamburger-menu__linha"></span>
+            <span class="hamburger-menu__linha"></span>
+            <span class="hamburger-menu__linha"></span>
         `;
         const cabecalhoMenu = document.querySelector('.cabecalho__menu');
         cabecalhoMenu.insertBefore(this.hamburgerBtn, cabecalhoMenu.firstChild);
@@ -121,9 +121,9 @@ class MobileMenu {
 
     openMenu() {
         this.isOpen = true;
-        this.hamburgerBtn.classList.add('active');
-        this.menuItens.classList.add('active');
-        this.overlay.classList.add('active');
+        this.hamburgerBtn.classList.add('hamburger-menu--active');
+        this.menuItens.classList.add('menu__itens--active');
+        this.overlay.classList.add('menu-overlay--active');
         if (this.botaoContato) {
             this.botaoContato.style.display = 'none';
         }
@@ -132,9 +132,9 @@ class MobileMenu {
 
     closeMenu() {
         this.isOpen = false;
-        this.hamburgerBtn.classList.remove('active');
-        this.menuItens.classList.remove('active');
-        this.overlay.classList.remove('active');
+        this.hamburgerBtn.classList.remove('hamburger-menu--active');
+        this.menuItens.classList.remove('menu__itens--active');
+        this.overlay.classList.remove('menu-overlay--active');
         if (this.botaoContato) {
             this.botaoContato.style.display = '';
         }
