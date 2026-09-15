@@ -9,123 +9,129 @@
 </head>
 <body>
     <div class="corpo-site">
-        <header class="cabecalho-site">
-            <div class="cabecalho-logo">
-                <p class="logo-principal">A</p>
-                <div class="logo-texto">
-                    <p class="logo-titulo">AGÊNCIA</p>
-                    <p class="logo-nome">CRIATIVA WEB</p>
+        <header class="cabecalho">
+            <div class="cabecalho__logo logo">
+                <p class="logo__letra">A</p>
+                <div class="logo__texto">
+                    <p class="logo__titulo">AGÊNCIA</p>
+                    <p class="logo__nome">CRIATIVA WEB</p>
                 </div>
             </div>
-            <div class="cabecalho-menu">
+            <div class="cabecalho__menu">
                 <nav class="menu">
-                    <ul class="menu-itens">
-                        <li class="item-lista">
-                            <a href="index.html" class="item-link">Início</a>
+                    <ul class="menu__itens">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__link">Início</a>
                         </li>
-                        <li class="item-lista">
-                            <a href="index.html#servicos" class="item-link">Serviços</a>
+                        <li class="menu__item">
+                            <a href="index.html#servicos" class="menu__link">Serviços</a>
                         </li>
-                        <li class="item-lista">
-                            <a href="index.html#clientes" class="item-link">Portfólio</a>
+                        <li class="menu__item">
+                            <a href="index.html#clientes" class="menu__link">Portfólio</a>
                         </li>
-                        <li class="item-lista">
-                            <a href="index.html#sobre" class="item-link">Sobre</a>
+                        <li class="menu__item">
+                            <a href="index.html#sobre" class="menu__link">Sobre</a>
                         </li>
-                        <li class="item-lista">
-                            <a href="contato.html" class="item-link ativo">Contato</a>
+                        <li class="menu__item">
+                            <a href="contato.html" class="menu__link menu__link--ativo">Contato</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="cabecalho-botao">
-                    <a href="#formulario" class="botao-formulario">
-                        Vamos conversar <img src="imagens/seta-branca.png" alt="" class="botao-formulario-img">
+                <div class="cabecalho__botao">
+                    <a href="#formulario" class="botao">
+                        Vamos conversar <img src="imagens/seta-branca.png" alt="" class="botao__icone">
                     </a>
                 </div>
             </div>
         </header>
 
         <main class="conteudo-principal">
-            <section class="secao-contato">
-                <div class="container-contato">
+            <section class="contato-pagina">
+                <div class="contato-pagina__container">
                     
-                    
-                    <div class="contato-info">
-                        <p class="contato-chamada">CONTATO</p>
-                        <h1 class="contato-titulo">Vamos conversar?<br>Será um prazer falar com você.</h1>
-                        <p class="contato-descricao">
+                    <div class="contato-pagina__texto">
+                        <p class="contato-pagina__chamada">CONTATO</p>
+                        <h1 class="contato-pagina__titulo">Vamos conversar?<br>Será um prazer falar com você.</h1>
+                        <p class="contato-pagina__descricao">
                             Se você tem um projeto em mente, precisa de ajuda para impulsionar sua marca ou quer apenas
                             trocar uma ideia, estamos aqui para ouvir. Preencha o formulário ao lado ou entre em contato
                             pelos nossos canais.
                         </p>
 
-                        <div class="contato-redes-sociais">
-                            <p class="redes-chamada">NOS SIGA</p>
-                            <p class="redes-texto">Acompanhe nosso trabalho, novidades e inspirações nas redes sociais.</p>
+                        <div class="contato-pagina__redes">
+                            <p class="contato-pagina__redes-chamada">NOS SIGA</p>
+                            <p class="contato-pagina__redes-texto">Acompanhe nosso trabalho, novidades e inspirações nas redes sociais.</p>
                             
-                            <div class="redes-icons">
-                                <div class="rede-item">
-                                    <div class="rede-icon">
-                                        <img src="imagens/github-preto.png" alt="GitHub" class="icon-rede">
-                                    </div>
-                                    <p class="rede-nome">GitHub</p>
-                                    <a href="https://github.com/lautomazelli" class="rede-link" target="_blank">/lautomazelli</a>
+                            <div class="contato-pagina__redes-lista">
+                                <div class="contato-pagina__rede">
+                                    <a href="https://github.com/lautomazelli" target="_blank" class="contato-pagina__rede-link">
+                                        <div class="contato-pagina__rede-icone">
+                                            <img src="imagens/github-preto.png" alt="GitHub" class="contato-pagina__rede-imagem">
+                                        </div>
+                                        <p class="contato-pagina__rede-nome">GitHub</p>
+                                        <span>/lautomazelli</span>
+                                    </a>
                                 </div>
                                 
-                                <div class="rede-item">
-                                    <div class="rede-icon">
-                                        <img src="imagens/linkedin-preto.png" alt="LinkedIn" class="icon-rede">
-                                    </div>
-                                    <p class="rede-nome">LinkedIn</p>
-                                    <a href="https://www.linkedin.com/in/lauratomazellidecastro/" class="rede-link" target="_blank">/lauratomazellidecastro</a>
+                                <div class="contato-pagina__rede">
+                                    <a href="https://www.linkedin.com/in/lauratomazellidecastro/" target="_blank" class="contato-pagina__rede-link">
+                                        <div class="contato-pagina__rede-icone">
+                                            <img src="imagens/linkedin-preto.png" alt="LinkedIn" class="contato-pagina__rede-imagem">
+                                        </div>
+                                        <p class="contato-pagina__rede-nome">LinkedIn</p>
+                                        <span>/lauratomazellidecastro</span>
+                                    </a>
                                 </div>
                                 
-                                <div class="rede-item">
-                                    <div class="rede-icon">
-                                        <img src="imagens/instagram-preto.png" alt="Instagram" class="icon-rede">
-                                    </div>
-                                    <p class="rede-nome">Instagram</p>
-                                    <a href="https://www.instagram.com/laura.tomazelli/" class="rede-link" target="_blank">@laura.tomazelli</a>
+                                <div class="contato-pagina__rede">
+                                    <a href="https://www.instagram.com/laura.tomazelli/" target="_blank" class="contato-pagina__rede-link">
+                                        <div class="contato-pagina__rede-icone">
+                                            <img src="imagens/instagram-preto.png" alt="Instagram" class="contato-pagina__rede-imagem">
+                                        </div>
+                                        <p class="contato-pagina__rede-nome">Instagram</p>
+                                        <span>@laura.tomazelli</span>
+                                    </a>
                                 </div>
                                 
-                                <div class="rede-item">
-                                    <div class="rede-icon">
-                                        <img src="imagens/email-preto.png" alt="E-mail" class="icon-rede">
-                                    </div>
-                                    <p class="rede-nome">E-mail</p>
-                                    <a href="mailto:lauratomazellidecastro@gmail.com" class="rede-link" target="_blank">lauratomazellidecastro@gmail.com</a>
+                                <div class="contato-pagina__rede">
+                                    <a href="mailto:lauratomazellidecastro@gmail.com" class="contato-pagina__rede-link">
+                                        <div class="contato-pagina__rede-icone">
+                                            <img src="imagens/email-preto.png" alt="E-mail" class="contato-pagina__rede-imagem">
+                                        </div>
+                                        <p class="contato-pagina__rede-nome">E-mail</p>
+                                        <span>lauratomazellidecastro@gmail.com</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="sobre-projeto">
-                            <p class="projeto-chamada">SOBRE ESTE PROJETO</p>
-                            <p class="projeto-texto">
+                        <div class="contato-pagina__projeto">
+                            <p class="contato-pagina__projeto-chamada">SOBRE ESTE PROJETO</p>
+                            <p class="contato-pagina__projeto-texto">
                                 Este projeto foi desenvolvido para o curso de Front-end da EBAC, módulo 11 de Web Design
                                 Responsivo, com o objetivo de criar uma landing page para uma agência de marketing.
                             </p>
                         </div>
                     </div>
 
-                    
-                    <div class="contato-formulario-card" id="formulario">
-                        <form class="formulario-contato" action="#" method="POST">
-                            <div class="formulario-campo">
+                    <div class="contato-pagina__form-card" id="formulario">
+                        <form class="contato-form__form" action="#" method="POST">
+                            <div class="contato-form__campo">
                                 <label for="nome">Nome</label>
                                 <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
                             </div>
                             
-                            <div class="formulario-campo">
+                            <div class="contato-form__campo">
                                 <label for="email">E-mail</label>
                                 <input type="email" id="email" name="email" placeholder="seu@email.com" required>
                             </div>
                             
-                            <div class="formulario-campo">
+                            <div class="contato-form__campo">
                                 <label for="telefone">Telefone</label>
                                 <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
                             </div>
                             
-                            <div class="formulario-campo">
+                            <div class="contato-form__campo">
                                 <label for="assunto">Assunto</label>
                                 <select id="assunto" name="assunto" required>
                                     <option value="" disabled selected>Selecione uma opção</option>
@@ -140,14 +146,14 @@
                                 </select>
                             </div>
                             
-                            <div class="formulario-campo">
+                            <div class="contato-form__campo">
                                 <label for="mensagem">Mensagem</label>
                                 <textarea id="mensagem" name="mensagem" placeholder="Conte pra gente sobre o seu projeto..." rows="5" required></textarea>
                             </div>
                             
-                            <button type="submit" class="formulario-botao-enviar">
+                            <button type="submit" class="contato-form__botao">
                                 Enviar mensagem
-                                <img src="imagens/seta-branca.png" alt="" class="botao-seta">
+                                <img src="imagens/seta-branca.png" alt="" class="contato-form__botao-icone">
                             </button>
                         </form>
                     </div>
@@ -156,64 +162,55 @@
             </section>
         </main>
 
-        <footer class="footer-contato">
-            <div class="footer-contato-container">
-                
-            
-                <div class="footer-contato-esquerda">
-                    <div class="footer-contato-logo">
-                        <p class="footer-contato-logo-principal">A</p>
-                        <div class="footer-contato-logo-texto">
-                            <p class="footer-contato-logo-titulo">AGÊNCIA</p>
-                            <p class="footer-contato-logo-nome">CRIATIVA WEB</p>
+        <footer class="footer footer--escuro">
+            <div class="footer__container">
+                <div class="footer__esquerda">
+                    <div class="footer__logo logo">
+                        <p class="logo__letra--clara">A</p>
+                        <div class="logo__texto">
+                            <p class="logo__titulo--clara">AGÊNCIA</p>
+                            <p class="logo__nome--clara">CRIATIVA WEB</p>
                         </div>
                     </div>
-                    
-                    <p class="footer-contato-descricao">Estratégia, criatividade e tecnologia para marcas que importam.</p>
-                    
-                    <div class="footer-contato-linha"></div>
-                    
-                    <p class="footer-contato-copy">&copy; 2026 Laura Tomazelli de Castro. Todos os direitos reservados.</p>
+                    <p class="footer__descricao">Estratégia, criatividade e tecnologia para marcas que importam.</p>
+                    <div class="footer__linha"></div>
+                    <p class="footer__copy">&copy; 2026 Laura Tomazelli de Castro. Todos os direitos reservados.</p>
                 </div>
-
-                
-                <div class="footer-contato-direita">
-                    <nav class="footer-contato-menu">
-                        <ul class="footer-contato-menu-itens">
-                            <li class="footer-contato-menu-item">
-                                <a href="index.html#home" class="footer-contato-link">Início</a>
+                <div class="footer__direita">
+                    <nav class="footer__menu">
+                        <ul class="footer__menu-lista">
+                            <li class="footer__menu-item">
+                                <a href="index.html#home" class="footer__menu-link">Início</a>
                             </li>
-                            <li class="footer-contato-menu-item">
-                                <a href="index.html#servicos" class="footer-contato-link">Serviços</a>
+                            <li class="footer__menu-item">
+                                <a href="index.html#servicos" class="footer__menu-link">Serviços</a>
                             </li>
-                            <li class="footer-contato-menu-item">
-                                <a href="index.html#clientes" class="footer-contato-link">Portfólio</a>
+                            <li class="footer__menu-item">
+                                <a href="index.html#clientes" class="footer__menu-link">Portfólio</a>
                             </li>
-                            <li class="footer-contato-menu-item">
-                                <a href="index.html#sobre" class="footer-contato-link">Sobre</a>
+                            <li class="footer__menu-item">
+                                <a href="index.html#sobre" class="footer__menu-link">Sobre</a>
                             </li>
-                            <li class="footer-contato-menu-item">
-                                <a href="contato.html" class="footer-contato-link">Contato</a>
+                            <li class="footer__menu-item">
+                                <a href="contato.html" class="footer__menu-link">Contato</a>
                             </li>
                         </ul>
                     </nav>
-
-                    <div class="footer-contato-redes">
-                        <a href="https://github.com/lautomazelli" target="_blank" class="footer-contato-rede-link" aria-label="GitHub" target="_blank">
+                    <div class="footer__redes">
+                        <a href="https://github.com/lautomazelli" target="_blank" class="footer__rede-link" aria-label="GitHub">
                             <img src="imagens/github-branco.png" alt="GitHub">
                         </a>
-                        <a href="https://www.linkedin.com/in/lauratomazellidecastro/" target="_blank" class="footer-contato-rede-link" aria-label="LinkedIn" target="_blank">
+                        <a href="https://www.linkedin.com/in/lauratomazellidecastro/" target="_blank" class="footer__rede-link" aria-label="LinkedIn">
                             <img src="imagens/linkedin-branco.png" alt="LinkedIn">
                         </a>
-                        <a href="https://www.instagram.com/laura.tomazelli/" target="_blank" class="footer-contato-rede-link" aria-label="Instagram" target="_blank">
+                        <a href="https://www.instagram.com/laura.tomazelli/" target="_blank" class="footer__rede-link" aria-label="Instagram">
                             <img src="imagens/instagram-branco.png" alt="Instagram">
                         </a>
-                        <a href="mailto:lauratomazellidecastro@gmail.com" class="footer-contato-rede-link" aria-label="E-mail" target="_blank">
+                        <a href="mailto:lauratomazellidecastro@gmail.com" class="footer__rede-link" aria-label="E-mail">
                             <img src="imagens/email-branco.png" alt="E-mail">
                         </a>
                     </div>
                 </div>
-
             </div>
         </footer>
     </div>

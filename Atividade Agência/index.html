@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,389 +7,367 @@
     <link rel="shortcut icon" href="imagens/diamante.png" type="image/x-icon">
     <title>Agência Criativa Web</title>
 </head>
-
 <body>
     <div class="corpo-site">
-        <header class="cabecalho-site">
-            <div class="cabecalho-logo">
-                <p class="logo-principal">A</p>
-                <div class="logo-texto">
-                    <p class="logo-titulo">AGÊNCIA</p>
-                    <p class="logo-nome">CRIATIVA WEB</p>
+        <header class="cabecalho">
+            <div class="cabecalho__logo logo">
+                <p class="logo__letra">A</p>
+                <div class="logo__texto">
+                    <p class="logo__titulo">AGÊNCIA</p>
+                    <p class="logo__nome">CRIATIVA WEB</p>
                 </div>
             </div>
-            <div class="cabecalho-menu">
+            <div class="cabecalho__menu">
                 <nav class="menu">
-                    <ul class="menu-itens">
-                        <li class="item-lista">
-                            <a href="#home" class="item-link" class="item-link ativo">Home</a>
+                    <ul class="menu__itens">
+                        <li class="menu__item">
+                            <a href="#home" class="menu__link menu__link--ativo">Home</a>
                         </li>
-                        <li class="item-lista">
-                            <a href="#servicos" class="item-link">Serviços</a>
+                        <li class="menu__item">
+                            <a href="#servicos" class="menu__link">Serviços</a>
                         </li>
-                        <li class="item-lista">
-                            <a href="#clientes" class="item-link">Clientes</a>
+                        <li class="menu__item">
+                            <a href="#clientes" class="menu__link">Clientes</a>
                         </li>
-                        <li class="item-lista">
-                            <a href="#sobre" class="item-link">Sobre</a>
+                        <li class="menu__item">
+                            <a href="#sobre" class="menu__link">Sobre</a>
                         </li>
-                        <li class="item-lista">
-                            <a href="contato.html" class="item-link">Contato</a>
+                        <li class="menu__item">
+                            <a href="contato.html" class="menu__link">Contato</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="cabecalho-botao">
-                    <a href="#formulario-contato" class="botao-formulario">
-                        Vamos conversar <img src="imagens/seta-branca.png" alt="" class="botao-formulario-img">
+                <div class="cabecalho__botao">
+                    <a href="#formulario-contato" class="botao">
+                        Vamos conversar <img src="imagens/seta-branca.png" alt="" class="botao__icone">
                     </a>
                 </div>
             </div>
         </header>
-
+        
         <main class="conteudo-principal">
-            <section id="home" class="principal-topo">
-                <div class="principal-texto">
-                    <p class="principal-chamada">IDEIAS QUE GANHAM VIDA NA INTERNET</p>
-                    <h1 class="principal-destaque">Design estratégico para marcas que querem ir mais longe.</h1>
-                    <p class="principal-descritivo">Somos a Agência Criativa Web, especialistas em criação de sites,
-                        identidade visual e soluções digitais que conectam marcas e pessoas.</p>
-                    <div class="principal-botao">
-                        <a href="#servicos" class="principal-botao-servicos">
-                            Conheça nossos serviços <img src="imagens/seta-branca.png" alt=""
-                                class="botao-servicos-img">
+            <section id="home" class="hero">
+                <div class="hero__texto">
+                    <p class="hero__chamada">IDEIAS QUE GANHAM VIDA NA INTERNET</p>
+                    <h1 class="hero__titulo">Design estratégico para marcas que querem ir mais longe.</h1>
+                    <p class="hero__descricao">Somos a Agência Criativa Web, especialistas em criação de sites, identidade visual e soluções digitais que conectam marcas e pessoas.</p>
+                    <div class="hero__botao-wrapper">
+                        <a href="#servicos" class="hero__botao">
+                            Conheça nossos serviços <img src="imagens/seta-branca.png" alt="" class="hero__botao-icone">
                         </a>
                     </div>
                 </div>
-                <div class="principal-img">
-                    <img src="imagens/fundo-agencia-m.png" srcset="imagens/fundo-agencia-p.png 500w, 
-             imagens/fundo-agencia-m.png 1000w, 
-             imagens/fundo-agencia-g.png 1672w" sizes="(max-width: 600px) 100vw, 50vw"
-                        alt="Ilustração de design digital criativo" class="imagem-principal">
+                <div class="hero__imagem-wrapper">
+                    <img src="imagens/fundo-agencia-m.png" 
+                         srcset="imagens/fundo-agencia-p.png 500w, 
+                                 imagens/fundo-agencia-m.png 1000w, 
+                                 imagens/fundo-agencia-g.png 1672w" 
+                         sizes="(max-width: 600px) 100vw, 50vw"
+                         alt="Ilustração de design digital criativo" 
+                         class="hero__imagem">
                 </div>
-                <div class="icone-rolar">
-                    <div class="icone-img">
+                <div class="hero__scroll">
+                    <div class="hero__scroll-icone">
                         <img src="imagens/seta-abaixo.png" alt="Seta indicando para rolar a página">
                     </div>
-                    <div class="rolar-texto">
-                        <p class="icone-texto">Role para descobrir</p>
+                    <div class="hero__scroll-texto">
+                        <p class="hero__scroll-label">Role para descobrir</p>
                     </div>
                 </div>
             </section>
-
-            <section id="servicos" class="conteudo-servicos">
-                <div class="servicos-texto">
-                    <div class="servicos-texto-esquerda">
-                        <p class="servicos-chamada">NOSSOS SERVIÇOS</p>
-                        <h2 class="servicos-destaque">Soluções digitais completas para o seu negócio.</h2>
+            
+            <section id="servicos" class="servicos">
+                <div class="servicos__header">
+                    <div class="servicos__header-esquerda">
+                        <p class="servicos__chamada">NOSSOS SERVIÇOS</p>
+                        <h2 class="servicos__titulo">Soluções digitais completas para o seu negócio.</h2>
                     </div>
-                    <div class="servicos-texto-direita">
-                        <p class="servicos-descritivo">Do planejamento à entrega, unimos criatividade, tecnologia e
-                            estratégia para criar experiências digitais que geram resultados.</p>
+                    <div class="servicos__header-direita">
+                        <p class="servicos__descricao">Do planejamento à entrega, unimos criatividade, tecnologia e estratégia para criar experiências digitais que geram resultados.</p>
                     </div>
                 </div>
-                <div class="servicos-container">
-                    <div class="servicos-container-box servicos-box-1">
-                        <div class="servicos-box-img">
-                            <img src="imagens/computador.png" alt="Ícone de computador representando criação de sites"
-                                class="servicos-img">
+                <div class="servicos__grid">
+                    <div class="servicos__item">
+                        <div class="servicos__icone-wrapper">
+                            <img src="imagens/computador.png" alt="Ícone de computador representando criação de sites" class="servicos__icone">
                         </div>
-                        <div class="servicos-box-texto">
-                            <p class="servicos-texto-titulo">Criação de Sites</p>
-                            <p class="servicos-texto-descritivo">Sites modernos, responsivos e otimizados para gerar
-                                resultados.</p>
+                        <div class="servicos__conteudo">
+                            <p class="servicos__item-titulo">Criação de Sites</p>
+                            <p class="servicos__item-descricao">Sites modernos, responsivos e otimizados para gerar resultados.</p>
                         </div>
                     </div>
 
-                    <div class="servicos-container-box servicos-box-2">
-                        <div class="servicos-box-img">
-                            <img src="imagens/criativo.png"
-                                alt="Ícone de lâmpada criativa representando identidade visual" class="servicos-img">
+                    <div class="servicos__item">
+                        <div class="servicos__icone-wrapper">
+                            <img src="imagens/criativo.png" alt="Ícone de lâmpada criativa representando identidade visual" class="servicos__icone">
                         </div>
-                        <div class="servicos-box-texto">
-                            <p class="servicos-texto-titulo">Identidade Visual</p>
-                            <p class="servicos-texto-descritivo">Marcas fortes e memoráveis que comunicam o que você é.
-                            </p>
+                        <div class="servicos__conteudo">
+                            <p class="servicos__item-titulo">Identidade Visual</p>
+                            <p class="servicos__item-descricao">Marcas fortes e memoráveis que comunicam o que você é.</p>
                         </div>
                     </div>
 
-                    <div class="servicos-container-box servicos-box-3">
-                        <div class="servicos-box-img">
-                            <img src="imagens/celular.png" alt="Ícone de celular representando redes sociais"
-                                class="servicos-img">
+                    <div class="servicos__item">
+                        <div class="servicos__icone-wrapper">
+                            <img src="imagens/celular.png" alt="Ícone de celular representando redes sociais" class="servicos__icone">
                         </div>
-                        <div class="servicos-box-texto">
-                            <p class="servicos-texto-titulo">Redes Sociais</p>
-                            <p class="servicos-texto-descritivo">Artes e conteúdos que engajam e fortalecem sua presença
-                                online.</p>
+                        <div class="servicos__conteudo">
+                            <p class="servicos__item-titulo">Redes Sociais</p>
+                            <p class="servicos__item-descricao">Artes e conteúdos que engajam e fortalecem sua presença online.</p>
                         </div>
                     </div>
 
-                    <div class="servicos-container-box servicos-box-4">
-                        <div class="servicos-box-img">
-                            <img src="imagens/grafico.png" alt="Ícone de gráfico representando marketing digital"
-                                class="servicos-img">
+                    <div class="servicos__item">
+                        <div class="servicos__icone-wrapper">
+                            <img src="imagens/grafico.png" alt="Ícone de gráfico representando marketing digital" class="servicos__icone">
                         </div>
-                        <div class="servicos-box-texto">
-                            <p class="servicos-texto-titulo">Marketing Digital</p>
-                            <p class="servicos-texto-descritivo">Estratégias personalizadas para atrair, engajar e
-                                converter.</p>
+                        <div class="servicos__conteudo">
+                            <p class="servicos__item-titulo">Marketing Digital</p>
+                            <p class="servicos__item-descricao">Estratégias personalizadas para atrair, engajar e converter.</p>
                         </div>
                     </div>
 
-                    <div class="servicos-container-box servicos-box-5">
-                        <div class="servicos-box-img">
-                            <img src="imagens/luz.png" alt="Ícone de lâmpada representando consultoria"
-                                class="servicos-img">
+                    <div class="servicos__item">
+                        <div class="servicos__icone-wrapper">
+                            <img src="imagens/luz.png" alt="Ícone de lâmpada representando consultoria" class="servicos__icone">
                         </div>
-                        <div class="servicos-box-texto">
-                            <p class="servicos-texto-titulo">Consultoria Criativa</p>
-                            <p class="servicos-texto-descritivo">Orientação especializada para impulsionar o seu projeto
-                                digital.</p>
+                        <div class="servicos__conteudo">
+                            <p class="servicos__item-titulo">Consultoria Criativa</p>
+                            <p class="servicos__item-descricao">Orientação especializada para impulsionar o seu projeto digital.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="clientes" class="conteudo-clientes">
-                <div class="clientes-texto">
-                    <p class="clientes-chamada">CLIENTES E PORTFÓLIO</p>
-                    <h2 class="clientes-destaque">Projetos que unem estética e performance.</h2>
+            <section id="clientes" class="clientes">
+                <div class="clientes__header">
+                    <p class="clientes__chamada">CLIENTES E PORTFÓLIO</p>
+                    <h2 class="clientes__titulo">Projetos que unem estética e performance.</h2>
                 </div>
-
-
-                <div class="carousel-container">
-                    <button class="carousel-btn carousel-btn-prev" aria-label="Projeto anterior">
-                        <img src="imagens/seta-preta-esquerda.png" alt="Anterior" class="seta-carousel">
+                
+                <div class="carousel">
+                    <button class="carousel__botao carousel__botao--prev" aria-label="Projeto anterior">
+                        <img src="imagens/seta-preta-esquerda.png" alt="Anterior" class="carousel__seta">
                     </button>
-
-                    <div class="carousel-track-container">
-                        <div class="carousel-track" id="carousel-projetos">
-                            <div class="clientes-container-box clientes-box-1">
-                                <div class="clientes-box-img">
-                                    <img src="imagens/notebook-m.png" srcset="imagens/notebook-p.png 400w, 
-                                     imagens/notebook-m.png 624w, 
-                                     imagens/notebook-g.png 624w" sizes="(max-width: 768px) 100vw, 50vw"
-                                        alt="Notebook exibindo site institucional" class="clientes-img">
+                    
+                    <div class="carousel__track-wrapper">
+                        <div class="carousel__track" id="carousel-projetos">
+                            <div class="clientes__item">
+                                <div class="clientes__imagem-wrapper">
+                                    <img src="imagens/notebook-m.png" 
+                                         srcset="imagens/notebook-p.png 400w, 
+                                                 imagens/notebook-m.png 624w, 
+                                                 imagens/notebook-g.png 624w" 
+                                         sizes="(max-width: 768px) 100vw, 50vw"
+                                         alt="Notebook exibindo site institucional" 
+                                         class="clientes__imagem">
                                 </div>
-                                <div class="clientes-box-texto">
-                                    <p class="clientes-texto-titulo">Site Institucional</p>
-                                    <p class="clientes-texto-descritivo">Tecnologia</p>
-                                </div>
-                            </div>
-
-                            <div class="clientes-container-box clientes-box-2">
-                                <div class="clientes-box-img">
-                                    <img src="imagens/moda-m.png" srcset="imagens/moda-p.png 400w, 
-                                     imagens/moda-m.png 624w, 
-                                     imagens/moda-g.png 624w" sizes="(max-width: 768px) 100vw, 50vw"
-                                        alt="Projeto de identidade visual para marca de moda" class="clientes-img">
-                                </div>
-                                <div class="clientes-box-texto">
-                                    <p class="clientes-texto-titulo">Identidade Visual</p>
-                                    <p class="clientes-texto-descritivo">Identificação</p>
+                                <div class="clientes__conteudo">
+                                    <p class="clientes__item-titulo">Site Institucional</p>
+                                    <p class="clientes__item-categoria">Tecnologia</p>
                                 </div>
                             </div>
-
-                            <div class="clientes-container-box clientes-box-3">
-                                <div class="clientes-box-img">
-                                    <img src="imagens/redes-sociais-m.png" srcset="imagens/redes-sociais-p.png 400w, 
-                                     imagens/redes-sociais-m.png 624w, 
-                                     imagens/redes-sociais-g.png 624w" sizes="(max-width: 768px) 100vw, 50vw"
-                                        alt="Projeto de redes sociais" class="clientes-img">
+                            
+                            <div class="clientes__item">
+                                <div class="clientes__imagem-wrapper">
+                                    <img src="imagens/moda-m.png" 
+                                         srcset="imagens/moda-p.png 400w, 
+                                                 imagens/moda-m.png 624w, 
+                                                 imagens/moda-g.png 624w" 
+                                         sizes="(max-width: 768px) 100vw, 50vw"
+                                         alt="Projeto de identidade visual para marca de moda" 
+                                         class="clientes__imagem">
                                 </div>
-                                <div class="clientes-box-texto">
-                                    <p class="clientes-texto-titulo">Redes Sociais</p>
-                                    <p class="clientes-texto-descritivo">Conexão</p>
+                                <div class="clientes__conteudo">
+                                    <p class="clientes__item-titulo">Identidade Visual</p>
+                                    <p class="clientes__item-categoria">Identificação</p>
                                 </div>
                             </div>
-
-                            <div class="clientes-container-box clientes-box-4">
-                                <div class="clientes-box-img">
-                                    <img src="imagens/cosmeticos-m.png" srcset="imagens/cosmeticos-p.png 400w, 
-                                     imagens/cosmeticos-m.png 624w, 
-                                     imagens/cosmeticos-g.png 624w" sizes="(max-width: 768px) 100vw, 50vw"
-                                        alt="E-commerce de cosméticos" class="clientes-img">
+                            
+                            <div class="clientes__item">
+                                <div class="clientes__imagem-wrapper">
+                                    <img src="imagens/redes-sociais-m.png" 
+                                         srcset="imagens/redes-sociais-p.png 400w, 
+                                                 imagens/redes-sociais-m.png 624w, 
+                                                 imagens/redes-sociais-g.png 624w" 
+                                         sizes="(max-width: 768px) 100vw, 50vw"
+                                         alt="Projeto de redes sociais" 
+                                         class="clientes__imagem">
                                 </div>
-                                <div class="clientes-box-texto">
-                                    <p class="clientes-texto-titulo">E-commerce</p>
-                                    <p class="clientes-texto-descritivo">Praticidade</p>
+                                <div class="clientes__conteudo">
+                                    <p class="clientes__item-titulo">Redes Sociais</p>
+                                    <p class="clientes__item-categoria">Conexão</p>
+                                </div>
+                            </div>
+                            
+                            <div class="clientes__item">
+                                <div class="clientes__imagem-wrapper">
+                                    <img src="imagens/cosmeticos-m.png" 
+                                         srcset="imagens/cosmeticos-p.png 400w, 
+                                                 imagens/cosmeticos-m.png 624w, 
+                                                 imagens/cosmeticos-g.png 624w" 
+                                         sizes="(max-width: 768px) 100vw, 50vw"
+                                         alt="E-commerce de cosméticos" 
+                                         class="clientes__imagem">
+                                </div>
+                                <div class="clientes__conteudo">
+                                    <p class="clientes__item-titulo">E-commerce</p>
+                                    <p class="clientes__item-categoria">Praticidade</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <button class="carousel-btn carousel-btn-next" aria-label="Próximo projeto">
-                        <img src="imagens/seta-preta.png" alt="Próximo" class="seta-carousel">
+                    
+                    <button class="carousel__botao carousel__botao--next" aria-label="Próximo projeto">
+                        <img src="imagens/seta-preta.png" alt="Próximo" class="carousel__seta">
                     </button>
                 </div>
 
-
-                <div class="carousel-container">
-                    <button class="carousel-btn carousel-btn-prev depoimentos-prev" aria-label="Depoimento anterior">
-                        <img src="imagens/seta-preta-esquerda.png" alt="Anterior" class="seta-carousel">
+                <div class="carousel">
+                    <button class="carousel__botao carousel__botao--prev" aria-label="Depoimento anterior">
+                        <img src="imagens/seta-preta-esquerda.png" alt="Anterior" class="carousel__seta">
                     </button>
-
-                    <div class="carousel-track-container">
-                        <div class="carousel-track" id="carousel-depoimentos">
-                            <div class="depoimento-box depoimento-box-1">
-                                <div class="depoimentos-texto">
-                                    <p class="depoimento-descritivo">"Ter a identidade visual bem definida fez aumentar
-                                        muito nosso reconhecimento! As pessoas olham e sabem que é!"</p>
-                                    <p class="depoimento-autor">SÉRGIO LUMIAR, MODA</p>
+                    
+                    <div class="carousel__track-wrapper">
+                        <div class="carousel__track" id="carousel-depoimentos">
+                            <div class="depoimento">
+                                <div class="depoimento__conteudo">
+                                    <p class="depoimento__texto">"Ter a identidade visual bem definida fez aumentar muito nosso reconhecimento! As pessoas olham e sabem que é!"</p>
+                                    <p class="depoimento__autor">SÉRGIO LUMIAR, MODA</p>
                                 </div>
                             </div>
-                            <div class="depoimento-box depoimento-box-2">
-                                <div class="depoimentos-texto">
-                                    <p class="depoimento-descritivo">"Um site institucional deu mais seriedade para
-                                        nossa clínica. Os clientes nos encontram no Google e confiam na marca ao ver o
-                                        site."</p>
-                                    <p class="depoimento-autor">ANA ACRIX, DERMATOLOGIA</p>
+                            <div class="depoimento">
+                                <div class="depoimento__conteudo">
+                                    <p class="depoimento__texto">"Um site institucional deu mais seriedade para nossa clínica. Os clientes nos encontram no Google e confiam na marca ao ver o site."</p>
+                                    <p class="depoimento__autor">ANA ACRIX, DERMATOLOGIA</p>
                                 </div>
                             </div>
-                            <div class="depoimento-box depoimento-box-3">
-                                <div class="depoimentos-texto">
-                                    <p class="depoimento-descritivo">"O e-commerce aumentou muito o faturamento da
-                                        empresa, pois vendemos até dormindo!"</p>
-                                    <p class="depoimento-autor">MARCELA LENOMARD, COSMÉTICOS NATURAIS</p>
+                            <div class="depoimento">
+                                <div class="depoimento__conteudo">
+                                    <p class="depoimento__texto">"O e-commerce aumentou muito o faturamento da empresa, pois vendemos até dormindo!"</p>
+                                    <p class="depoimento__autor">MARCELA LENOMARD, COSMÉTICOS NATURAIS</p>
                                 </div>
                             </div>
-                            <div class="depoimento-box depoimento-box-4">
-                                <div class="depoimentos-texto">
-                                    <p class="depoimento-descritivo">"Eu não sabia como gerar conteúdo para minha
-                                        empresa. Quando a agência começou a criar os conteúdos, aumentou muito o
-                                        engajamento e o número de vendas. Podemos dizer que triplicou!"</p>
-                                    <p class="depoimento-autor">PAULO RISE, COSMÉTICOS</p>
+                            <div class="depoimento">
+                                <div class="depoimento__conteudo">
+                                    <p class="depoimento__texto">"Eu não sabia como gerar conteúdo para minha empresa. Quando a agência começou a criar os conteúdos, aumentou muito o engajamento e o número de vendas. Podemos dizer que triplicou!"</p>
+                                    <p class="depoimento__autor">PAULO RISE, COSMÉTICOS</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <button class="carousel-btn carousel-btn-next depoimentos-next" aria-label="Próximo depoimento">
-                        <img src="imagens/seta-preta.png" alt="Próximo" class="seta-carousel">
+                    
+                    <button class="carousel__botao carousel__botao--next" aria-label="Próximo depoimento">
+                        <img src="imagens/seta-preta.png" alt="Próximo" class="carousel__seta">
                     </button>
                 </div>
             </section>
 
-            <hr class="divisor-secao">
-
-            <section id="sobre" class="conteudo-sobre">
-                <div class="sobre-container">
-                    <div class="sobre-texto">
-                        <p class="sobre-chamada">SOBRE NÓS</p>
-                        <h2 class="sobre-destaque">Estratégia, criatividade e tecnologia para marcas que importam.</h2>
-                        <p class="sobre-descritivo">Somos a Agência Criativa Web, um time de especialistas que acredita
-                            no poder das ideias bem construídas. Unimos estratégia, design e tecnologia para transformar
-                            marcas em experiências digitais relevantes, humanas e inesquecíveis.</p>
+            <section id="sobre" class="sobre">
+                <div class="sobre__container">
+                    <div class="sobre__texto">
+                        <p class="sobre__chamada">SOBRE NÓS</p>
+                        <h2 class="sobre__titulo">Estratégia, criatividade e tecnologia para marcas que importam.</h2>
+                        <p class="sobre__descricao">Somos a Agência Criativa Web, um time de especialistas que acredita no poder das ideias bem construídas. Unimos estratégia, design e tecnologia para transformar marcas em experiências digitais relevantes, humanas e inesquecíveis.</p>
                     </div>
-
-                    <div class="sobre-valores">
-                        <div class="valor-item">
-                            <div class="valor-icon">
-                                <img src="imagens/pessoas.png" alt="Ícone de pessoas" class="valor-img">
+                    <div class="sobre__valores">
+                        <div class="sobre__valor">
+                            <div class="sobre__valor-icone">
+                                <img src="imagens/pessoas.png" alt="Ícone de pessoas" class="sobre__valor-imagem">
                             </div>
-                            <div class="valor-conteudo">
-                                <h3 class="valor-titulo">Pessoas no centro</h3>
-                                <p class="valor-descritivo">Cada projeto começa com escuta, empatia e um olhar atento às
-                                    pessoas por trás de cada marca.</p>
+                            <div class="sobre__valor-conteudo">
+                                <h3 class="sobre__valor-titulo">Pessoas no centro</h3>
+                                <p class="sobre__valor-descricao">Cada projeto começa com escuta, empatia e um olhar atento às pessoas por trás de cada marca.</p>
                             </div>
                         </div>
-
-                        <div class="valor-item">
-                            <div class="valor-icon">
-                                <img src="imagens/alvo.png" alt="Ícone de alvo" class="valor-img">
+                        
+                        <div class="sobre__valor">
+                            <div class="sobre__valor-icone">
+                                <img src="imagens/brilho.png" alt="Ícone de alvo" class="sobre__valor-imagem">
                             </div>
-                            <div class="valor-conteudo">
-                                <h3 class="valor-titulo">Estratégia com propósito</h3>
-                                <p class="valor-descritivo">Mais do que estética, criamos soluções com foco em resultado
-                                    e crescimento sustentável.</p>
-                            </div>
-                        </div>
-
-                        <div class="valor-item">
-                            <div class="valor-icon">
-                                <img src="imagens/brilho.png" alt="Ícone de criatividade" class="valor-img">
-                            </div>
-                            <div class="valor-conteudo">
-                                <h3 class="valor-titulo">Criatividade que conecta</h3>
-                                <p class="valor-descritivo">Unimos design, conteúdo e tecnologia para gerar experiências
-                                    que despertam interesse e fortalecem marcas.</p>
+                            <div class="sobre__valor-conteudo">
+                                <h3 class="sobre__valor-titulo">Estratégia com propósito</h3>
+                                <p class="sobre__valor-descricao">Mais do que estética, criamos soluções com foco em resultado e crescimento sustentável.</p>
                             </div>
                         </div>
-
-                        <div class="valor-item">
-                            <div class="valor-icon">
-                                <img src="imagens/diamante.png" alt="Ícone de compromisso" class="valor-img">
+                        
+                        <div class="sobre__valor">
+                            <div class="sobre__valor-icone">
+                                <img src="imagens/criativo.png" alt="Ícone de criatividade" class="sobre__valor-imagem">
                             </div>
-                            <div class="valor-conteudo">
-                                <h3 class="valor-titulo">Compromisso real</h3>
-                                <p class="valor-descritivo">Trabalhamos com transparência, proximidade e dedicação em
-                                    cada etapa do processo.</p>
+                            <div class="sobre__valor-conteudo">
+                                <h3 class="sobre__valor-titulo">Criatividade que conecta</h3>
+                                <p class="sobre__valor-descricao">Unimos design, conteúdo e tecnologia para gerar experiências que despertam interesse e fortalecem marcas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="sobre__valor">
+                            <div class="sobre__valor-icone">
+                                <img src="imagens/diamante.png" alt="Ícone de compromisso" class="sobre__valor-imagem">
+                            </div>
+                            <div class="sobre__valor-conteudo">
+                                <h3 class="sobre__valor-titulo">Compromisso real</h3>
+                                <p class="sobre__valor-descricao">Trabalhamos com transparência, proximidade e dedicação em cada etapa do processo.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-
-            <section id="contato-chamada" class="contato-chamada-secao">
-                <div class="contato-container">
-                    <div class="contato-info">
-                        <p class="contato-chamada">VAMOS CONVERSAR</p>
-                        <h2 class="contato-destaque">Seu projeto merece uma agência que entende de pessoas, marcas e de
-                            digital.</h2>
-                        <p class="contato-descritivo">Conte pra gente sobre o seu desafio, ideia ou projeto. Vamos
-                            adorar conversar e entender como podemos construir algo incrível juntos.</p>
+            <section id="contato-cta" class="contato-cta">
+                <div class="contato-cta__container">
+                    <div class="contato-cta__texto">
+                        <p class="contato-cta__chamada">VAMOS CONVERSAR</p>
+                        <h2 class="contato-cta__titulo">Seu projeto merece uma agência que entende de pessoas, marcas e de digital.</h2>
+                        <p class="contato-cta__descricao">Conte pra gente sobre o seu desafio, ideia ou projeto. Vamos adorar conversar e entender como podemos construir algo incrível juntos.</p>
                     </div>
                 </div>
             </section>
 
-
-            <section id="formulario-contato" class="formulario-secao">
-                <div class="formulario-container">
-                    <div class="formulario-lado-esquerdo">
-                        <p class="formulario-chamada">FALE CONOSCO</p>
-                        <h2 class="formulario-destaque">Seu projeto merece uma agência que entende de pessoas, marcas e
-                            de digital.</h2>
-                        <p class="formulario-descritivo">Conte pra gente sobre o seu desafio, ideia ou projeto. Vamos
-                            adorar conversar e entender como podemos construir algo incrível juntos.</p>
-
-                        <div class="formulario-features">
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <img src="imagens/fala.png" alt="Ícone atendimento" class="feature-img">
+            <section id="formulario-contato" class="contato-form">
+                <div class="contato-form__container">
+                    <div class="contato-form__texto">
+                        <p class="contato-form__chamada">FALE CONOSCO</p>
+                        <h2 class="contato-form__titulo">Seu projeto merece uma agência que entende de pessoas, marcas e de digital.</h2>
+                        <p class="contato-form__descricao">Conte pra gente sobre o seu desafio, ideia ou projeto. Vamos adorar conversar e entender como podemos construir algo incrível juntos.</p>
+                        
+                        <div class="contato-form__features">
+                            <div class="contato-form__feature">
+                                <div class="contato-form__feature-icone">
+                                    <img src="imagens/fala.png" alt="Ícone atendimento" class="contato-form__feature-imagem">
                                 </div>
-                                <p class="feature-texto">Atendimento personalizado</p>
+                                <p class="contato-form__feature-texto">Atendimento personalizado</p>
                             </div>
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <img src="imagens/medida.png" alt="Ícone soluções" class="feature-img">
+                            <div class="contato-form__feature">
+                                <div class="contato-form__feature-icone">
+                                    <img src="imagens/medida.png" alt="Ícone soluções" class="contato-form__feature-imagem">
                                 </div>
-                                <p class="feature-texto">Soluções sob medida</p>
+                                <p class="contato-form__feature-texto">Soluções sob medida</p>
                             </div>
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <img src="imagens/alvo.png" alt="Ícone sucesso" class="feature-img">
+                            <div class="contato-form__feature">
+                                <div class="contato-form__feature-icone">
+                                    <img src="imagens/alvo.png" alt="Ícone sucesso" class="contato-form__feature-imagem">
                                 </div>
-                                <p class="feature-texto">Seu sucesso é o nosso foco</p>
+                                <p class="contato-form__feature-texto">Seu sucesso é o nosso foco</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="formulario-card">
-                        <form class="formulario-contato" action="#" method="POST">
-                            <div class="formulario-campo">
+                    
+                    <div class="contato-form__card">
+                        <form class="contato-form__form" action="#" method="POST">
+                            <div class="contato-form__campo">
                                 <label for="nome">Nome</label>
                                 <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
                             </div>
-                            <div class="formulario-campo">
+                            <div class="contato-form__campo">
                                 <label for="email">E-mail</label>
                                 <input type="email" id="email" name="email" placeholder="seu@email.com" required>
                             </div>
-                            <div class="formulario-campo">
+                            <div class="contato-form__campo">
                                 <label for="telefone">Telefone</label>
                                 <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
                             </div>
-                            <div class="formulario-campo">
+                            <div class="contato-form__campo">
                                 <label for="assunto">Assunto</label>
                                 <select id="assunto" name="assunto" required>
                                     <option value="" disabled selected>Selecione uma opção</option>
@@ -404,14 +381,13 @@
                                     <option value="outros">Outros</option>
                                 </select>
                             </div>
-                            <div class="formulario-campo">
+                            <div class="contato-form__campo">
                                 <label for="mensagem">Mensagem</label>
-                                <textarea id="mensagem" name="mensagem"
-                                    placeholder="Conte pra gente sobre o seu projeto..." rows="5" required></textarea>
+                                <textarea id="mensagem" name="mensagem" placeholder="Conte pra gente sobre o seu projeto..." rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="formulario-botao-enviar">
+                            <button type="submit" class="contato-form__botao">
                                 Enviar mensagem
-                                <img src="imagens/seta-branca.png" alt="" class="botao-seta">
+                                <img src="imagens/seta-branca.png" alt="" class="contato-form__botao-icone">
                             </button>
                         </form>
                     </div>
@@ -419,41 +395,58 @@
             </section>
         </main>
 
-        <footer class="conteudo-footer">
-            <div class="footer-logo">
-                <p class="footer-logo-principal">A</p>
-                <div class="footer-logo-texto">
-                    <p class="footer-logo-titulo">AGÊNCIA</p>
-                    <p class="footer-logo-nome">CRIATIVA WEB</p>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__esquerda">
+                    <div class="footer__logo logo">
+                        <p class="logo__letra">A</p>
+                        <div class="logo__texto">
+                            <p class="logo__titulo">AGÊNCIA</p>
+                            <p class="logo__nome">CRIATIVA WEB</p>
+                        </div>
+                    </div>
+                    <p class="footer__descricao">Estratégia, criatividade e tecnologia para marcas que importam.</p>
+                    <div class="footer__linha"></div>
+                    <p class="footer__copy">&copy; 2026 Laura Tomazelli de Castro. Todos os direitos reservados.</p>
                 </div>
-            </div>
-            <div class="footer-menu">
-                <nav class="menu-rodape">
-                    <ul class="footer-menu-itens">
-                        <li class="item-lista-footer">
-                            <a href="#home" class="item-link">Home</a>
-                        </li>
-                        <li class="item-lista-footer">
-                            <a href="#servicos" class="item-link">Serviços</a>
-                        </li>
-                        <li class="item-lista-footer">
-                            <a href="#clientes" class="item-link">Clientes</a>
-                        </li>
-                        <li class="item-lista-footer">
-                            <a href="#sobre" class="item-link">Sobre</a>
-                        </li>
-                        <li class="item-lista-footer">
-                            <a href="#contato.html" class="item-link">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer-direitos">
-                <p class="footer-copy">&copy; 2026 Laura Tomazelli de Castro. Todos os direitos reservados.</p>
+                <div class="footer__direita">
+                    <nav class="footer__menu">
+                        <ul class="footer__menu-lista">
+                            <li class="footer__menu-item">
+                                <a href="#home" class="footer__menu-link">Início</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#servicos" class="footer__menu-link">Serviços</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#clientes" class="footer__menu-link">Portfólio</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#sobre" class="footer__menu-link">Sobre</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="contato.html" class="footer__menu-link">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__redes">
+                        <a href="https://github.com/lautomazelli" target="_blank" class="footer__rede-link" aria-label="GitHub">
+                            <img src="imagens/github-branco.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/lauratomazellidecastro/" target="_blank" class="footer__rede-link" aria-label="LinkedIn">
+                            <img src="imagens/linkedin-branco.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.instagram.com/laura.tomazelli/" target="_blank" class="footer__rede-link" aria-label="Instagram">
+                            <img src="imagens/instagram-branco.png" alt="Instagram">
+                        </a>
+                        <a href="mailto:lauratomazellidecastro@gmail.com" class="footer__rede-link" aria-label="E-mail">
+                            <img src="imagens/email-branco.png" alt="E-mail">
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
