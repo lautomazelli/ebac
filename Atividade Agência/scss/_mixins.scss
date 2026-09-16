@@ -1,0 +1,18 @@
+@use "variaveis" as *;
+
+@mixin flex-centralizado($direcao: row) {
+    display: flex;
+    flex-direction: $direcao;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin botao-base {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: $transicao-padrao;
+}

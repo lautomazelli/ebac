@@ -41,3 +41,21 @@ O projeto foi construído utilizando a stack fundamental da Web, explorando seus
 
 ---
 
+
+
+## Estrutura SASS
+
+O CSS do projeto foi refatorado para SASS, mantendo o visual e a responsividade existentes. Os arquivos-fonte ficam em `scss/` e o resultado compilado em `css/`.
+
+### Compilação
+
+```bash
+npm install
+npm run sass
+```
+
+Para recompilar automaticamente:
+
+```bash
+npm run sass:watch
+```
