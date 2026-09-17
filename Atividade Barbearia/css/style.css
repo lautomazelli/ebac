@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-black: #0D0D0C;
+    --color-black-soft: #151412;
+    --color-black-deep: #050505;
+    --color-ivory: #E9E6DF;
+    --color-white: #F4F1EA;
+    --color-text-muted: #B8B1A5;
+    --color-gold: #B88A4A;
+    --color-gold-light: #D0A15D;
+    --color-border: #55432C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.section {
+    padding: 6rem 0;
+}
+
+.section__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+}
+
+.section__title {
+    font-size: 2.8rem;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+
+.section__text {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+}
+
+.header {
+    background-color: var(--color-black-deep);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ivory) !important;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-gold) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--color-gold);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(184, 138, 74, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.hero {
+    position: relative;
+    min-height: 80vh;
+    background: linear-gradient(90deg, rgba(5, 5, 5, 0.95) 0%, rgba(5, 5, 5, 0.6) 50%, rgba(5, 5, 5, 0.1) 100%), url('../img/hero-site.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    max-width: 600px;
+    padding: 4rem 0;
+}
+
+.hero__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hero__title {
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+
+.hero__text {
+    font-size: 1.1rem;
+    color: var(--color-ivory);
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 28px;
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    border: none;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-gold-light);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
+.btn__arrow {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+.section-sobre {
+    background-color: var(--color-black-soft);
+}
+
+.sobre__content {
+    padding-left: 2rem;
+}
+
+.sobre__tags {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+}
+
+.section-servicos {
+    background-color: var(--color-ivory);
+    color: var(--color-black);
+}
+
+.section-servicos .section__title {
+    color: var(--color-black);
+}
+
+.section-servicos .section__text {
+    color: var(--color-black-soft);
+}
+
+.service-card {
+    background-color: var(--color-black-soft);
+    color: var(--color-white);
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card__body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.service-card__icon {
+    width: 60px;
+    height: 60px;
+    margin: -45px auto 1rem;
+    background-color: var(--color-black-deep);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-gold);
+}
+
+.service-card__icon img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.service-card__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-white);
+}
+
+.service-card__text {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+.section-depoimentos {
+    background: linear-gradient(90deg, rgba(13, 13, 12, 0.2) 0%, rgba(13, 13, 12, 1) 100%), url('../img/tesouras-barbearia.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.testimonial-card {
+    background-color: rgba(21, 20, 18, 0.9);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 2rem;
+    height: 100%;
+}
+
+.testimonial-card__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card__foto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-gold);
+}
+
+.testimonial-card__stars {
+    display: flex;
+    gap: 4px;
+}
+
+.testimonial-card__stars img {
+    width: 16px;
+    height: 16px;
+}
+
+.testimonial-card__text {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--color-ivory);
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card__autor {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-gold);
+    margin: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-gold);
+    border-radius: 50%;
+    background-size: 50%;
+}
+
+.section-contato {
+    background-color: var(--color-black-deep);
+    padding: 0;
+}
+
+.contato__info {
+    background: url('../img/area-logo-barbearia.png') no-repeat center center;
+    background-size: cover;
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+}
+
+
+.contato__title {
+    font-size: 2.5rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.contato__text {
+    color: var(--color-ivory);
+    margin-bottom: 2rem;
+}
+
+.contato__details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.contato__icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.contato__form-section {
+    padding: 6rem 4rem;
+    background-color: var(--color-black-soft);
+}
+
+.contato__form-wrapper {
+    max-width: 500px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 16px;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: 2px;
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.form-control::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.footer {
+    background-color: var(--color-black-deep);
+    padding: 3rem 0;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.footer__logo {
+    height: 60px;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
+}
+
+.footer__text {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__social-link img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.footer__social-link:hover img {
+    filter: brightness(0) invert(0.7) sepia(1) hue-rotate(350deg) saturate(3);
+}
+
+.footer__copyright {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .hero {
+        text-align: center;
+    }
+    .hero__content {
+        margin: 0 auto;
+    }
+    .sobre__content {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    .contato__info, .contato__form-section {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+    .section__title {
+        font-size: 2.2rem;
+    }
+    .hero {
+        min-height: 60vh;
+    }
+    .contato__info {
+        background-position: center top;
+    }
+    .navbar-brand img {
+        height: 60px;
+    }
+    .footer__logo {
+        height: 50px;
+    }
+}

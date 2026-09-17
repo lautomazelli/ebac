@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Livre Barbearia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-barbearia.png" alt="Estilo Livre Barbearia" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero__content">
+                        <p class="hero__subtitle">Mais que um corte,</p>
+                        <h1 class="hero__title">É O SEU ESTILO LIVRE.</h1>
+                        <p class="hero__text">Na Estilo Livre Barbearia, você encontra mais do que um corte: é um espaço
+                            pensado para o seu estilo, sua personalidade e seu momento.</p>
+                        <a href="#contato" class="btn btn-primary">
+                            Entre em Contato
+                            <span class="btn__arrow"><img src="img/seta-branca.png" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section section-sobre">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="img/area-corte-barbearia.png" alt="Interior da Barbearia Estilo Livre"
+                        class="img-fluid sobre__imagem">
+                </div>
+                <div class="col-lg-6">
+                    <div class="sobre__content">
+                        <p class="section__subtitle">Sobre Nós</p>
+                        <h2 class="section__title">Estilo, atitude e autenticidade.</h2>
+                        <p class="section__text">A Estilo Livre Barbearia nasceu da paixão por cortes, barba e boas
+                            conversas. Aqui, cada cliente é único e nosso objetivo é valorizar o seu estilo, com um
+                            atendimento personalizado, ambiente acolhedor e profissionais que realmente entendem do que
+                            fazem.</p>
+                        <div class="sobre__tags">
+                            <span>Tradição</span>
+                            <span>+</span>
+                            <span>Modernidade</span>
+                            <span>+</span>
+                            <span>Você</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="section section-servicos">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <p class="section__subtitle">Serviços</p>
+                    <h2 class="section__title">Tudo o que você precisa para o seu melhor estilo.</h2>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-12 col-sm-6 col-lg">
+                    <div class="service-card">
+                        <img src="img/corte-cabelo.png" alt="Corte de Cabelo" class="service-card__img">
+                        <div class="service-card__body">
+                            <div class="service-card__icon">
+                                <img src="icones/tesoura.png" alt="Ícone tesoura">
+                            </div>
+                            <h3 class="service-card__title">Corte de Cabelo</h3>
+                            <p class="service-card__text">Do clássico ao moderno, sempre no seu estilo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg">
+                    <div class="service-card">
+                        <img src="img/corte-barba.png" alt="Barba" class="service-card__img">
+                        <div class="service-card__body">
+                            <div class="service-card__icon">
+                                <img src="icones/barba.png" alt="Ícone barba">
+                            </div>
+                            <h3 class="service-card__title">Barba</h3>
+                            <p class="service-card__text">Modelagem e alinhamento para um visual impecável.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg">
+                    <div class="service-card">
+                        <img src="img/lavagem-cabelo.png" alt="Higienização" class="service-card__img">
+                        <div class="service-card__body">
+                            <div class="service-card__icon">
+                                <img src="icones/gota-de-agua.png" alt="Ícone gota">
+                            </div>
+                            <h3 class="service-card__title">Higienização</h3>
+                            <p class="service-card__text">Cuidado e bem-estar para o seu cabelo e couro cabeludo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg">
+                    <div class="service-card">
+                        <img src="img/design-sobrancelha.png" alt="Sobrancelha" class="service-card__img">
+                        <div class="service-card__body">
+                            <div class="service-card__icon">
+                                <img src="icones/sobrancelhas.png" alt="Ícone rosto">
+                            </div>
+                            <h3 class="service-card__title">Sobrancelha</h3>
+                            <p class="service-card__text">Mais definição e harmonia para o seu rosto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg">
+                    <div class="service-card">
+                        <img src="img/combo-barberaria.png" alt="Combos Especiais" class="service-card__img">
+                        <div class="service-card__body">
+                            <div class="service-card__icon">
+                                <img src="icones/pacote.png" alt="Ícone tesoura e barba">
+                            </div>
+                            <h3 class="service-card__title">Combos Especiais</h3>
+                            <p class="service-card__text">O cuidado completo para você.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="section section-depoimentos">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <p class="section__subtitle">Depoimentos</p>
+                    <h2 class="section__title text-white">Nossos clientes também falam por nós.</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-card__header">
+                                                <img src="img/cliente-1.png" alt="Lucas F."
+                                                    class="testimonial-card__foto">
+                                                <div class="testimonial-card__stars">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                </div>
+                                            </div>
+                                            <p class="testimonial-card__text">"Ambiente incrível, atendimento de
+                                                primeira e um corte impecável! Já virei cliente fiel."</p>
+                                            <p class="testimonial-card__autor">Lucas F.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-card__header">
+                                                <img src="img/cliente-2.png" alt="Rafael M."
+                                                    class="testimonial-card__foto">
+                                                <div class="testimonial-card__stars">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                </div>
+                                            </div>
+                                            <p class="testimonial-card__text">"A barba ficou exatamente como eu queria.
+                                                Profissionais super atenciosos e o espaço é muito top!"</p>
+                                            <p class="testimonial-card__autor">Rafael M.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-card__header">
+                                                <img src="img/cliente-3.png" alt="Felipe S."
+                                                    class="testimonial-card__foto">
+                                                <div class="testimonial-card__stars">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                </div>
+                                            </div>
+                                            <p class="testimonial-card__text">"A melhor barbearia da região! Estilo,
+                                                qualidade e um atendimento que faz toda a diferença."</p>
+                                            <p class="testimonial-card__autor">Felipe S.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-card__header">
+                                                <img src="img/cliente-4.png" alt="André C."
+                                                    class="testimonial-card__foto">
+                                                <div class="testimonial-card__stars">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                </div>
+                                            </div>
+                                            <p class="testimonial-card__text">"Finalmente encontrei uma barbearia que
+                                                entende o que eu quero. Recomendo demais!"</p>
+                                            <p class="testimonial-card__autor">André C.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-card__header">
+                                                <img src="img/cliente-5.png" alt="Bruno L."
+                                                    class="testimonial-card__foto">
+                                                <div class="testimonial-card__stars">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                </div>
+                                            </div>
+                                            <p class="testimonial-card__text">"Atendimento nota 10! Saí de lá me
+                                                sentindo um novo homem. Com certeza voltarei sempre."</p>
+                                            <p class="testimonial-card__autor">Bruno L.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-card__header">
+                                                <img src="img/cliente-6.png" alt="Gustavo P."
+                                                    class="testimonial-card__foto">
+                                                <div class="testimonial-card__stars">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                    <img src="icones/estrela.png" alt="Estrela">
+                                                </div>
+                                            </div>
+                                            <p class="testimonial-card__text">"Ambiente descontraído e profissionais
+                                                qualificados. É a minha barbearia de confiança!"</p>
+                                            <p class="testimonial-card__autor">Gustavo P.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section section-contato">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 contato__info">
+                    <h2 class="contato__title">Venha fazer parte da nossa história.</h2>
+                    <p class="contato__text">Estamos prontos para te atender!</p>
+                    <div class="contato__details">
+                        <div class="contato__item">
+                            <img src="icones/whatsapp.png" alt="Telefone" class="contato__icon">
+                            <span>(47) 99999-9999</span>
+                        </div>
+                        <div class="contato__item">
+                            <img src="icones/localizacao.png" alt="Localização" class="contato__icon">
+                            <span>Rua Exemplo, 123 - Centro - Cidade Exemplo/SC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 contato__form-section">
+                    <div class="contato__form-wrapper">
+                        <p class="section__subtitle">Contato</p>
+                        <h2 class="section__title mb-4">Fale com a gente</h2>
+                        <form class="contato__form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Nome completo *" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="E-mail *" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="4" placeholder="Mensagem *"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        Enviar Mensagem
+                                        <span class="btn__arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center text-lg-start mb-3 mb-lg-0">
+                    <img src="img/logo-barbearia.png" alt="Estilo Livre Barbearia" class="footer__logo">
+                </div>
+                <div class="col-lg-4 text-center mb-3 mb-lg-0">
+                    <p class="footer__text">Estilo Livre Barbearia &nbsp;|&nbsp; Qualidade &nbsp;•&nbsp; Estilo
+                        &nbsp;•&nbsp; Você</p>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/laura.tomazelli/" class="footer__social-link" target="_blank">
+                            <img src="icones/instagram-preto.png" alt="Instagram">
+                        </a>
+                        <a href="https://github.com/lautomazelli" class="footer__social-link" target="_blank">
+                            <img src="icones/github-branco.png" alt="Github">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="footer__copyright">© 2026 Laura Tomazelli de Castro</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
