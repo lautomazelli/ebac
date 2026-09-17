@@ -64,7 +64,7 @@ Principais aprendizados:
 ## Como Visualizar
 
 ### Online
-🔗 *[Link do GitHub Pages](#)*
+🔗 *[https://lautomazelli.github.io/ebac/Atividade%20Barbearia/index.html](#)*
 
 ### 💻 Localmente
 1. Clone o repositório:
