@@ -1,0 +1,66 @@
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #1E3246;
+  background: #F4EFE6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --paper: #F4EFE6;
+  --beige: #D8C8B8;
+  --gray: #C5C6C7;
+
+  --forest: #2D4739;
+  --slate: #1E3246;
+  --burgundy: #5E2129;
+  --plum: #4A2545;
+  --gold: #C6923A;
+
+  --text: #26342E;
+  --muted: #4D554F;
+  --surface: #FFFCF7;
+  --border: #BDAE9E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
